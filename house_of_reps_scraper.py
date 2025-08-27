@@ -12,4 +12,7 @@ headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 
 response = requests.get(wiki_url, headers=headers)
 soup = BeautifulSoup(response.text, 'html.parser')
-print(soup)
+table = soup.find('table', class_=table_id)
+rows = table.find_all('tr')
+table_data = []
+

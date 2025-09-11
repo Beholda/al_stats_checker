@@ -19,7 +19,6 @@ def main():
     soup = BeautifulSoup(response.text, 'html.parser')
     deserts_table = soup.find('table', class_=table_class)
     rows = deserts_table.find_all('tr')
-    table_data = []
 
     headers = []
     for th in rows[0].find_all('th'): #specify first row and go through each element

@@ -1,0 +1,152 @@
+ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpedo,Evasion,Aviation,Oil Consumption,Reload,Anti-Submarine,Oxygen,Ammunition,Accuracy
+052,Nevada,Normal,Eagle Union,BB,75,Heavy,20,7140,383,206,0,26,0,12,134,0,0,0,70
+053,Oklahoma,Normal,Eagle Union,BB,38,Heavy,20,7121,383,206,0,26,0,12,134,0,0,0,70
+054,Pennsylvania,Rare,Eagle Union,BB,72,Heavy,21,7366,395,217,0,28,0,13,139,0,0,0,72
+055,Arizona,Elite,Eagle Union,BB,17,Heavy,21,7307,405,223,0,28,0,14,141,0,0,0,72
+058,Tennessee,Rare,Eagle Union,BB,51,Heavy,21,7561,396,215,0,29,0,13,141,0,0,0,71
+059,California,Rare,Eagle Union,BB,36,Heavy,21,7561,396,215,0,29,0,13,141,0,0,0,71
+060,Colorado,Elite,Eagle Union,BB,67,Heavy,21,7633,415,221,0,31,0,14,151,0,0,0,71
+061,Maryland,Elite,Eagle Union,BB,70,Heavy,21,7692,410,221,0,31,0,14,148,0,0,0,66
+062,West Virginia,Elite,Eagle Union,BB,61,Heavy,21,7633,415,221,0,31,0,14,151,0,0,0,72
+063,North Carolina,Super Rare,Eagle Union,BB,81,Heavy,28,8038,426,409,0,34,0,15,161,0,0,0,72
+064,Washington,Super Rare,Eagle Union,BB,89,Heavy,28,8271,426,409,0,34,0,15,161,0,0,0,72
+065,South Dakota,Super Rare,Eagle Union,BB,76,Heavy,27,8221,419,409,0,34,0,15,161,0,0,0,74
+066,Indiana,Super Rare,Eagle Union,BB,62,Heavy,27,8221,428,403,0,34,0,15,172,0,0,0,72
+068,New Jersey,Ultra Rare,Eagle Union,BB,72,Heavy,33,9745,453,438,0,40,0,17,172,0,0,0,76
+127,Renown,Elite,Royal Navy,BC,85,Medium,32,6356,381,282,0,38,0,13,158,0,0,0,74
+128,Repulse,Rare,Royal Navy,BC,28,Medium,31,6176,359,274,0,37,0,12,155,0,0,0,70
+129,Hood,Super Rare,Royal Navy,BC,38,Medium,31,8637,347,330,0,38,0,14,161,0,0,0,70
+130,Queen Elizabeth,Elite,Royal Navy,BB,25,Heavy,24,7690,408,217,0,34,0,14,147,0,0,0,70
+131,Warspite,Super Rare,Royal Navy,BB,90,Heavy,24,7968,431,224,0,34,0,15,161,0,0,0,78
+132,Nelson,Elite,Royal Navy,BB,66,Heavy,23,7836,412,223,0,34,0,14,151,0,0,0,72
+133,Rodney,Elite,Royal Navy,BB,81,Heavy,23,7811,412,223,0,32,0,14,151,0,0,0,72
+134,King George V,Super Rare,Royal Navy,BB,77,Heavy,28,8159,428,270,0,36,0,15,158,0,0,0,72
+135,Prince of Wales,Super Rare,Royal Navy,BB,19,Heavy,28,8155,428,235,0,36,0,15,158,0,0,0,71
+136,Duke of York,Super Rare,Royal Navy,BB,73,Heavy,28,8155,426,230,0,36,0,15,155,0,0,0,72
+137,Vanguard,Ultra Rare,Royal Navy,BB,52,Heavy,30,9690,422,435,0,39,0,17,178,0,0,0,80
+138,Lion,Ultra Rare,Royal Navy,BB,50,Heavy,28,8625,463,246,0,58,0,17,181,0,0,0,69
+149,Erebus,Elite,Royal Navy,BM,91,Light,12,3731,286,175,0,63,0,10,147,0,0,0,83
+150,Terror,Elite,Royal Navy,BM,19,Light,12,3731,286,175,0,63,0,10,147,0,0,0,83
+204,Kongou,Elite,Sakura Empire,BC,43,Medium,30,6762,372,279,0,38,0,14,161,0,0,0,72
+205,Hiei,Elite,Sakura Empire,BC,37,Medium,30,6762,372,279,0,38,0,14,162,0,0,0,70
+206,Haruna,Elite,Sakura Empire,BC,47,Medium,30,6762,365,279,0,38,0,14,161,0,0,0,70
+207,Kirishima,Elite,Sakura Empire,BC,37,Medium,30,6762,372,279,0,38,0,14,162,0,0,0,70
+208,Fusou,Rare,Sakura Empire,BB,13,Heavy,23,7081,395,227,0,32,0,13,140,0,0,0,68
+209,Yamashiro,Rare,Sakura Empire,BB,14,Heavy,23,7482,395,227,0,32,0,13,140,0,0,0,68
+210,Ise,Rare,Sakura Empire,BB,60,Heavy,23,7294,403,234,0,32,0,13,143,0,0,0,72
+211,Hyuuga,Rare,Sakura Empire,BB,60,Heavy,23,7294,403,234,0,32,0,13,143,0,0,0,72
+212,Nagato,Super Rare,Sakura Empire,BB,71,Heavy,25,8311,424,186,0,38,0,15,148,0,0,0,72
+213,Mutsu,Elite,Sakura Empire,BB,34,Heavy,25,8084,415,189,0,36,0,14,147,0,0,0,73
+214,Kii,Super Rare,Sakura Empire,BB,39,Heavy,28,8134,426,375,287,38,0,15,147,0,0,0,73
+215,Tosa,Super Rare,Sakura Empire,BB,12,Heavy,26,8248,429,204,220,38,0,15,147,0,0,0,73
+217,Musashi,Ultra Rare,Sakura Empire,BB,33,Heavy,26,11117,479,234,0,38,0,17,156,0,0,0,74
+248,Scharnhorst,Elite,Iron Blood,BC,43,Medium,31,7632,371,253,156,40,0,13,160,0,0,0,68
+249,Gneisenau,Elite,Iron Blood,BC,64,Medium,31,7632,371,253,156,40,0,13,160,0,0,0,68
+250,Bismarck,Super Rare,Iron Blood,BB,32,Heavy,30,8970,428,212,0,34,0,15,155,0,0,0,75
+251,Tirpitz,Super Rare,Iron Blood,BB,45,Heavy,30,8592,428,212,220,34,0,15,152,0,0,0,69
+320,Mikasa,Super Rare,Sakura Empire,BB,95,Heavy,18,5501,339,176,0,26,0,14,166,0,0,0,74
+336,Abercrombie,Elite,Royal Navy,BM,38,Light,12,3869,290,186,0,63,0,10,150,0,0,0,83
+352,Dunkerque,Elite,Vichya Dominion,BC,35,Medium,31,6950,362,232,0,43,0,13,166,0,0,0,73
+353,Jean Bart,Super Rare,Vichya Dominion,BB,17,Heavy,32,8227,425,247,0,44,0,15,182,0,0,0,69
+354,Massachusetts,Super Rare,Eagle Union,BB,82,Heavy,27,7967,419,409,0,34,0,15,158,0,0,0,76
+367,Amagi,Super Rare,Sakura Empire,BC,23,Medium,30,7837,426,191,216,42,0,15,150,0,0,0,70
+368,Kaga(BB),Super Rare,Sakura Empire,BB,42,Heavy,26,8501,429,191,220,40,0,15,151,0,0,0,73
+383,Hiei-chan,Elite,Sakura Empire,BC,37,Medium,30,6609,368,253,170,41,0,14,162,0,0,0,70
+401,Alabama,Super Rare,Eagle Union,BB,86,Heavy,27,7967,424,417,0,34,0,15,156,0,0,0,66
+410,Littorio,Super Rare,Sardegna Empire,BB,79,Heavy,30,8567,426,248,0,37,0,15,156,0,0,0,60
+411,Conte di Cavour,Rare,Sardegna Empire,BB,45,Heavy,27,6994,341,179,148,38,0,13,140,0,0,0,63
+412,Giulio Cesare,Elite,Sardegna Empire,BB,65,Heavy,27,7197,351,190,153,38,0,14,151,0,0,0,65
+418,Gascogne µ,Super Rare,Vichya Dominion,BB,0,Heavy,32,8035,434,242,0,38,0,15,170,0,0,0,73
+425,Suruga,Super Rare,Sakura Empire,BB,37,Heavy,28,8425,426,220,216,38,0,15,141,0,0,0,70
+437,Gangut,Elite,Northern Parliament,BB,85,Heavy,24,6645,328,177,0,34,0,14,151,0,0,0,63
+438,Sovetsky Soyuz,Ultra Rare,Northern Parliament,BB,50,Heavy,28,10218,458,257,0,37,0,17,166,0,0,0,63
+440,Sovetskaya Belorussiya,Super Rare,Northern Parliament,BB,46,Heavy,28,8459,434,220,0,36,0,15,158,0,0,0,78
+441,Sovetskaya Rossiya,Super Rare,Northern Parliament,BB,46,Heavy,28,8522,433,253,0,36,0,15,141,0,0,0,60
+451,Little Renown,Elite,Royal Navy,BC,85,Medium,32,6470,349,309,0,42,0,13,155,0,0,0,70
+453,Richelieu,Super Rare,Iris Libre,BB,19,Heavy,32,8629,452,299,0,44,0,15,169,0,0,0,70
+461,Howe,Super Rare,Royal Navy,BB,83,Heavy,28,8155,424,264,0,36,0,15,161,0,0,0,72
+464,Valiant,Elite,Royal Navy,BB,72,Heavy,24,7643,412,217,0,32,0,14,152,0,0,0,72
+500,Vittorio Veneto,Super Rare,Sardegna Empire,BB,80,Heavy,30,8693,434,248,0,37,0,15,161,0,0,0,60
+510,Amagi-chan,Elite,Sakura Empire,BC,23,Medium,30,7397,372,185,174,45,0,14,144,0,0,0,70
+529,Ulrich von Hutten,Ultra Rare,Iron Blood,BB,50,Heavy,30,9741,454,257,0,28,0,17,180,0,0,0,69
+536,Arkhangelsk,Elite,Northern Parliament,BB,72,Heavy,23,7395,420,230,0,28,0,14,152,0,0,0,68
+543,Seydlitz,Super Rare,Iron Blood,BC,83,Heavy,26,7537,389,270,181,34,0,14,151,0,0,0,69
+544,Lützow,Super Rare,Iron Blood,BC,30,Heavy,26,7803,395,274,183,32,0,14,166,0,0,0,68
+545,Thüringen,Elite,Iron Blood,BB,60,Heavy,20,6400,398,180,117,23,0,14,141,0,0,0,61
+554,Revenge,Elite,Royal Navy,BB,76,Heavy,21,7643,404,217,0,30,0,14,152,0,0,0,72
+561,Roma,Super Rare,Sardegna Empire,BB,40,Heavy,30,8946,431,246,0,37,0,15,158,0,0,0,60
+566,Brünhilde,Super Rare,Iron Blood,BC,50,Heavy,33,7597,379,316,244,43,0,14,166,0,0,0,63
+582,Royal Oak,Super Rare,Royal Navy,BB,47,Heavy,22,7978,422,234,0,30,0,15,158,0,0,0,76
+587,Sevastopol,Elite,Northern Parliament,BB,88,Heavy,24,6645,328,213,0,34,0,14,151,0,0,0,63
+593,Bismarck Zwei,Ultra Rare,Iron Blood,BB,32,Heavy,30,9429,448,279,0,28,0,17,170,0,0,0,75
+595,Andrea Doria,Elite,Sardegna Empire,BB,77,Heavy,26,7292,365,204,0,38,0,14,152,0,0,0,68
+602,Lyon,Elite,Iris Libre,BB,50,Heavy,21,7290,415,213,164,30,0,14,158,0,0,0,65
+604,Clemenceau,Super Rare,Vichya Dominion,BB,10,Heavy,32,8344,455,310,0,44,0,15,171,0,0,0,71
+606,Owari,Super Rare,Sakura Empire,BB,41,Heavy,29,8678,426,375,287,40,0,15,147,0,0,0,73
+617,Constellation,Super Rare,Eagle Union,BC,50,Medium,33,8578,424,428,183,41,0,15,172,0,0,0,70
+621,Huan Ch'ang,Super Rare,Dragon Empery,BC,50,Medium,29,6940,347,328,0,36,0,14,161,0,0,0,72
+628,Poltava,Elite,Northern Parliament,BB,60,Heavy,24,6590,328,177,0,32,0,14,151,0,0,0,63
+636,Kongou µ,Elite,Sakura Empire,BC,43,Medium,30,6762,376,279,0,38,0,14,162,0,0,0,74
+641,Alsace,Ultra Rare,Iris Libre,BB,34,Heavy,32,9373,455,315,0,44,0,17,177,0,0,0,71
+647,Little Friedrich,Elite,Iron Blood,BB,0,Heavy,30,9210,416,226,0,28,0,14,147,0,0,0,67
+648,Alvitr,Super Rare,Iron Blood,BC,50,Heavy,33,7597,382,318,244,43,0,14,169,0,0,0,66
+652,Strasbourg,Super Rare,Vichya Dominion,BC,35,Medium,31,7213,381,242,0,43,0,14,172,0,0,0,73
+678,Raffaello,Ultra Rare,Sardegna Empire,BB,41,Heavy,30,9497,464,263,0,37,0,17,181,0,0,0,60
+685,Kazan,Super Rare,Northern Parliament,BB,50,Heavy,28,8807,438,257,0,37,0,15,147,0,0,0,75
+694,Admiral Zenker,Super Rare,Iron Blood,BC,50,Heavy,32,7497,375,317,243,40,0,14,170,0,0,0,65
+698,Masséna,Super Rare,Iris Libre,BC,76,Medium,28,7390,356,242,0,38,0,14,170,0,0,0,69
+10044,Super Gamer Kizuna AI,Super Rare,KizunaAI,BB,66,Heavy,26,7835,414,203,214,31,0,15,144,0,0,0,58
+10062,Honoka,Super Rare,Venus Vacation,BB,91,Heavy,26,8095,408,219,0,18,0,15,146,0,0,0,58
+10065,Nagisa,Elite,Venus Vacation,BB,87,Heavy,30,7689,388,177,0,40,0,14,151,0,0,0,67
+10069,Tamaki,Super Rare,Venus Vacation,BC,87,Heavy,33,8417,412,316,0,41,0,14,174,0,0,0,75
+10073,Iori Minase,Super Rare,The Idolmaster,BB,77,Heavy,26,8000,426,384,0,36,0,15,151,0,0,0,57
+10082,Akane Shinjo,Super Rare,SSSS,BB,55,Heavy,26,7820,434,360,0,36,0,15,157,0,0,0,66
+10087,Mujina,Elite,SSSS,BB,55,Heavy,30,7766,399,197,0,40,0,14,138,0,0,0,62
+10088,The 2nd,Super Rare,SSSS,BBV,55,Heavy,33,8609,398,316,0,39,380,15,132,0,0,0,79
+10093,Patricia Abelheim,Super Rare,Atelier Ryza,BB,52,Heavy,30,8534,441,356,0,40,0,15,157,0,0,0,70
+10105,Fubuki (Senran Kagura),Super Rare,Senran Kagura,BB,95,Heavy,30,8192,435,357,0,39,0,15,169,0,0,0,70
+10114,Golden Darkness,Super Rare,To LOVE-Ru,BB,75,Heavy,26,8307,432,294,0,35,0,15,157,0,0,0,66
+10115,Haruna Sairenji,Elite,To LOVE-Ru,BC,79,Medium,30,6766,346,310,0,37,0,13,155,0,0,0,71
+10121,BLACK★ROCK SHOOTER,Super Rare,BLACK★ROCK SHOOTER (Nation),BC,26,Medium,35,8478,387,305,0,35,0,15,175,0,0,0,69
+10133,Nina Friede,Super Rare,Atelier Yumia,BB,27,Heavy,35,8088,447,230,0,35,0,15,158,0,0,0,67
+20002,Monarch,Priority,Royal Navy,BB,0,Heavy,28,8155,432,235,0,36,0,16,170,0,0,0,68
+20004,Izumo,Priority,Sakura Empire,BB,0,Heavy,28,8812,437,242,0,38,0,16,148,0,0,0,68
+20008,Georgia,Priority,Eagle Union,BB,0,Heavy,33,8486,445,418,0,31,0,16,166,0,0,0,75
+20011,Friedrich der Große,Decisive,Iron Blood,BB,0,Heavy,30,10122,458,246,0,28,0,19,159,0,0,0,67
+20012,Gascogne,Priority,Vichya Dominion,BB,0,Heavy,32,8047,439,247,0,37,0,16,170,0,0,0,73
+20016,Odin,Priority,Iron Blood,BC,0,Heavy,30,7296,369,345,246,38,0,16,173,0,0,0,63
+20017,Champagne,Priority,Iris Libre,BB,0,Medium,32,7058,464,247,0,37,0,16,183,0,0,0,79
+20022,Marco Polo,Priority,Sardegna Empire,BB,0,Heavy,32,8621,441,264,0,41,0,16,158,0,0,0,66
+20024,Prinz Rupprecht,Priority,Iron Blood,BC,0,Heavy,32,8674,379,326,305,40,0,16,151,0,0,0,66
+20028,Kearsarge,Decisive,Eagle Union,BBV,0,Heavy,30,9389,441,340,0,39,401,19,155,0,0,0,81
+20032,Flandre,Priority,Vichya Dominion,BB,0,Heavy,33,8806,445,276,0,40,0,16,169,0,0,0,73
+20034,Daisen,Priority,Sakura Empire,BB,0,Heavy,35,8554,424,264,270,47,0,16,191,0,0,0,70
+20038,Kansas,Priority,Eagle Union,BB,0,Heavy,23,8886,449,405,0,32,0,16,147,0,0,0,68
+20039,Mecklenburg,Decisive,Iron Blood,BB,0,Heavy,32,10383,539,264,316,41,0,19,169,0,0,0,63
+30005,Fusou META,Elite,META,BB,13,Heavy,23,7421,405,238,0,32,0,14,143,0,0,0,67
+30007,Gneisenau META,Super Rare,META,BC,64,Medium,31,7607,394,291,170,35,0,15,166,0,0,0,65
+30009,Scharnhorst META,Super Rare,META,BC,43,Medium,31,7607,372,291,177,35,0,15,166,0,0,0,65
+30010,Yamashiro META,Elite,META,BB,14,Heavy,23,7809,414,238,0,33,0,15,148,0,0,0,67
+30012,Repulse META,Super Rare,META,BC,28,Medium,32,7005,381,313,0,37,0,15,144,0,0,0,62
+30014,Renown META,Super Rare,META,BC,85,Medium,33,7065,385,325,0,38,0,15,158,0,0,0,69
+30017,Arizona META,Super Rare,META,BB,28,Heavy,21,7337,434,264,0,23,0,16,151,0,0,0,64
+30019,Queen Elizabeth META,Super Rare,META,BB,25,Heavy,24,7667,430,222,0,33,0,16,153,0,0,0,69
+30027,Erebus META,Elite,META,BM,91,Light,12,3863,287,173,0,66,0,11,150,0,0,0,89
+30031,Rodney META,Super Rare,META,BB,81,Heavy,23,8048,426,229,0,33,0,16,156,0,0,0,72
+30037,Nagato META,Super Rare,META,BB,71,Heavy,25,8251,438,184,0,39,0,16,148,0,0,0,74
+30038,Hiei META,Super Rare,META,BC,37,Medium,30,7215,392,298,0,41,0,15,169,0,0,0,71
+30040,Giulio Cesare META,Elite,META,BB,65,Heavy,27,7713,396,222,0,42,0,15,164,0,0,0,70
+30044,Andrea Doria META,Super Rare,META,BB,77,Heavy,26,7582,424,244,0,37,0,16,158,0,0,0,67
+30046,Nevada META,Elite,META,BB,75,Heavy,21,7440,410,235,0,26,0,15,164,0,0,0,77
+30050,Dunkerque META,Elite,META,BC,35,Medium,31,6901,368,265,0,48,0,14,165,0,0,0,74
+3052,Nevada (Retrofit),Rare,Eagle Union,BB,75,Heavy,20,7380,393,246,0,26,0,12,154,0,,,85
+3053,Oklahoma (Retrofit),Rare,Eagle Union,BB,38,Heavy,20,7361,393,251,0,26,0,12,154,0,,,80
+3060,Colorado (Retrofit),Super Rare,Eagle Union,BB,67,Heavy,21,7873,445,251,0,31,0,14,176,0,,,91
+3061,Maryland (Retrofit),Super Rare,Eagle Union,BB,70,Heavy,21,7932,440,251,0,31,0,14,173,0,,,86
+3062,West Virginia (Retrofit),Super Rare,Eagle Union,BB,61,Heavy,21,7873,445,251,0,31,0,14,176,0,,,92
+3131,Warspite (Retrofit),Ultra Rare,Royal Navy,BB,90,Heavy,24,8208,451,294,0,34,0,15,181,99,,,103
+3132,Nelson (Retrofit),Super Rare,Royal Navy,BB,66,Heavy,23,8076,442,253,0,34,0,14,171,0,,,97
+3208,Fusou (Retrofit),Elite,Sakura Empire,BBV,13,Heavy,23,7431,394,309,0,32,205,13,136,0,,,80
+3209,Yamashiro (Retrofit),Elite,Sakura Empire,BBV,14,Heavy,23,7832,394,309,0,32,205,13,136,0,,,80
+3210,Ise (Retrofit),Elite,Sakura Empire,BBV,60,Heavy,23,7413,394,380,0,32,278,13,134,0,,,89
+3211,Hyuuga (Retrofit),Elite,Sakura Empire,BBV,60,Heavy,23,7413,394,380,0,32,278,13,134,0,,,89

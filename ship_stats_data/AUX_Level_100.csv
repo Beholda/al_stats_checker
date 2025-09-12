@@ -1,0 +1,8 @@
+ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpedo,Evasion,Aviation,Oil Consumption,Reload,Anti-Submarine,Oxygen,Ammunition,Accuracy
+080,Vestal,Elite,Eagle Union,AR,79,Light,16,4185,47,139,0,37,0,10,159,0,0,0,97
+232,Akashi,Super Rare,Sakura Empire,AR,53,Light,19,3731,41,146,0,39,0,11,171,0,0,0,95
+472,Kashino,Elite,Sakura Empire,AE,58,Light,14,4504,69,122,0,44,0,10,193,0,0,0,191
+580,Ting An,Elite,Dragon Empery,AE,49,Light,9,1972,0,122,0,92,149,10,142,0,0,0,125
+10075,Ritsuko Akizuki,Elite,The Idolmaster,AE,85,Medium,25,3912,66,158,0,54,0,10,203,0,0,0,204
+10089,Princess Hime,Super Rare,SSSS,AE,55,Light,30,4815,67,116,0,66,0,11,204,0,0,0,190
+30022,Vestal META,Elite,META,AR,78,Light,16,4318,185,144,0,38,0,11,159,0,0,0,101

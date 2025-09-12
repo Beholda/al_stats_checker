@@ -1,0 +1,12 @@
+ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpedo,Evasion,Aviation,Oil Consumption,Reload,Anti-Submarine,Oxygen,Ammunition,Accuracy
+571,Royal Fortune,Super Rare,Tempesta,IXs,51,Light,18,2317,201,0,0,102,0,7,183,0,0,2,169
+610,Golden Hind,Super Rare,Tempesta,IXv,78,Light,8,3192,177,0,0,95,0,10,171,0,0,0,170
+611,Mary Celeste,Super Rare,Tempesta,IXs,81,Light,18,2563,190,0,0,99,0,7,158,0,0,2,159
+612,Adventure Galley,Elite,Tempesta,IXv,68,Light,11,4391,223,0,0,69,0,10,177,0,0,0,120
+613,São Martinho,Super Rare,Tempesta,IXm,59,Light,26,6168,430,0,0,36,0,14,170,0,0,0,62
+614,Whydah,Elite,Tempesta,IXs,18,Light,18,2059,188,0,0,99,0,6,191,0,0,2,167
+664,Ganj-i-Sawai,Super Rare,Tempesta,IXm,20,Light,26,6210,446,0,0,36,0,14,183,0,0,0,61
+665,Fancy,Super Rare,Tempesta,IXv,75,Light,14,4563,251,0,0,77,0,11,183,0,0,0,133
+666,Amity,Super Rare,Tempesta,IXs,66,Light,18,2643,195,0,0,72,0,7,161,0,0,2,160
+667,Portsmouth Adventure,Elite,Tempesta,IXv,49,Light,6,3046,167,0,0,93,0,9,161,0,0,0,165
+668,Dolphin,Elite,Tempesta,IXs,25,Light,20,2319,212,0,0,106,0,6,194,0,0,2,173

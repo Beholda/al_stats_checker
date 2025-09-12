@@ -1,0 +1,12 @@
+ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpedo,Evasion,Aviation,Oil Consumption,Reload,Anti-Submarine,Oxygen,Ammunition,Accuracy
+571,Royal Fortune,Super Rare,Tempesta,IXs,51,Light,18,388,37,0,0,31,0,3,66,0,0,2,57
+610,Golden Hind,Super Rare,Tempesta,IXv,78,Light,8,544,32,0,0,26,0,3,62,0,0,0,57
+611,Mary Celeste,Super Rare,Tempesta,IXs,81,Light,18,403,35,0,0,21,0,3,57,0,0,2,53
+612,Adventure Galley,Elite,Tempesta,IXv,68,Light,11,731,41,0,0,9,0,3,64,0,0,0,38
+613,São Martinho,Super Rare,Tempesta,IXm,59,Light,26,1005,81,0,0,6,0,5,62,0,0,0,21
+614,Whydah,Elite,Tempesta,IXs,18,Light,18,324,34,0,0,28,0,2,69,0,0,2,57
+664,Ganj-i-Sawai,Super Rare,Tempesta,IXm,20,Light,26,1003,84,0,0,6,0,5,66,0,0,0,20
+665,Fancy,Super Rare,Tempesta,IXv,75,Light,14,760,46,0,0,11,0,3,66,0,0,0,43
+666,Amity,Super Rare,Tempesta,IXs,66,Light,18,431,36,0,0,19,0,3,58,0,0,2,54
+667,Portsmouth Adventure,Elite,Tempesta,IXv,49,Light,6,519,31,0,0,25,0,2,58,0,0,0,55
+668,Dolphin,Elite,Tempesta,IXs,25,Light,20,365,39,0,0,30,0,2,70,0,0,2,59

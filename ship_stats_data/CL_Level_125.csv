@@ -1,0 +1,171 @@
+ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpedo,Evasion,Aviation,Oil Consumption,Reload,Anti-Submarine,Oxygen,Ammunition,Accuracy
+029,Omaha,Normal,Eagle Union,CL,67,Light,35,3312,144,287,210,127,0,8,185,82,0,0,156
+030,Raleigh,Normal,Eagle Union,CL,82,Light,35,3312,144,287,210,127,0,8,185,82,0,0,156
+031,Brooklyn,Rare,Eagle Union,CL,55,Light,32,3550,166,313,0,106,0,9,183,100,0,0,162
+032,Phoenix,Rare,Eagle Union,CL,88,Light,32,3550,166,313,0,106,0,9,183,97,0,0,162
+033,Helena,Elite,Eagle Union,CL,33,Light,32,3688,174,323,0,106,0,10,188,111,0,0,180
+034,Atlanta,Rare,Eagle Union,CL,12,Light,32,3598,131,431,159,112,0,9,181,190,0,0,173
+035,Juneau,Rare,Eagle Union,CL,18,Light,32,3598,131,431,159,112,0,9,181,190,0,0,173
+036,San Diego,Super Rare,Eagle Union,CL,85,Light,32,3842,139,458,170,112,0,11,193,204,0,0,173
+037,Cleveland,Elite,Eagle Union,CL,71,Light,32,4406,167,330,0,109,0,10,191,102,0,0,168
+038,Columbia,Elite,Eagle Union,CL,70,Light,32,4406,170,330,0,109,0,10,190,102,0,0,167
+104,Leander,Normal,Royal Navy,CL,44,Light,32,3322,148,328,274,128,0,8,174,127,0,0,149
+105,Achilles,Rare,Royal Navy,CL,54,Light,32,3044,166,301,328,114,0,9,177,130,0,0,152
+106,Ajax,Rare,Royal Navy,CL,74,Light,32,3044,166,301,328,114,0,9,177,130,0,0,152
+107,Dido,Super Rare,Royal Navy,CL,85,Light,32,3831,160,396,180,114,0,11,196,171,0,0,164
+110,Southampton,Rare,Royal Navy,CL,32,Light,32,3773,153,314,276,119,0,9,174,105,0,0,161
+111,Sheffield,Elite,Royal Navy,CL,78,Light,32,3884,158,358,299,119,0,10,185,89,0,0,164
+112,Manchester,Elite,Royal Navy,CL,41,Light,32,3724,143,338,276,126,0,10,177,138,0,0,162
+113,Gloucester,Elite,Royal Navy,CL,45,Light,32,3875,158,324,284,119,0,10,178,143,0,0,161
+114,Edinburgh,Elite,Royal Navy,CL,37,Light,32,4588,159,320,284,119,0,10,178,102,0,0,164
+115,Belfast,Super Rare,Royal Navy,CL,88,Light,32,4062,181,299,344,113,0,11,185,147,0,0,164
+116,Arethusa,Rare,Royal Navy,CL,69,Light,32,2896,158,331,274,119,0,9,190,117,0,0,175
+117,Galatea,Rare,Royal Navy,CL,26,Light,32,2896,158,331,274,119,0,9,190,94,0,0,175
+118,Aurora,Elite,Royal Navy,CL,84,Light,32,2982,164,341,282,119,0,10,197,110,0,0,176
+179,Yuubari,Elite,Sakura Empire,CL,53,Light,35,2228,133,314,280,124,0,8,185,85,0,0,143
+182,Nagara,Normal,Sakura Empire,CL,36,Light,36,2959,142,284,282,132,0,8,175,85,0,0,149
+183,Isuzu,Rare,Sakura Empire,CL,33,Light,36,3289,121,350,223,119,0,9,178,100,0,0,149
+184,Natori,Elite,Sakura Empire,CL,43,Light,36,2953,148,316,296,124,0,10,185,143,0,0,149
+185,Yura,Elite,Sakura Empire,CL,40,Light,36,2965,148,310,296,124,0,10,185,143,0,0,149
+186,Kinu,Elite,Sakura Empire,CL,52,Light,36,2953,150,310,293,124,0,10,183,125,0,0,149
+187,Abukuma,Normal,Sakura Empire,CL,43,Light,36,2959,142,284,282,132,0,8,175,94,0,0,149
+188,Mogami,Elite,Sakura Empire,CL,14,Medium,29,4109,204,190,188,85,0,11,191,46,0,0,153
+189,Mikuma,Elite,Sakura Empire,CL,13,Medium,29,4109,204,190,190,85,0,11,191,46,0,0,153
+238,Königsberg,Normal,Iron Blood,CL,42,Light,32,3450,155,341,276,126,0,8,177,105,0,0,157
+239,Karlsruhe,Normal,Iron Blood,CL,39,Light,32,3450,155,341,276,126,0,8,177,89,0,0,157
+240,Köln,Normal,Iron Blood,CL,62,Light,32,3450,155,341,276,126,0,8,177,107,0,0,157
+241,Leipzig,Rare,Iron Blood,CL,67,Light,32,3576,150,354,274,121,0,9,188,100,0,0,163
+257,Yat Sen,Elite,Dragon Empery,CL,64,Light,19,1928,122,354,0,93,0,10,185,56,0,0,150
+258,Ning Hai,Elite,Dragon Empery,CL,51,Light,23,2028,148,295,237,88,0,10,185,77,0,0,156
+259,Ping Hai,Elite,Dragon Empery,CL,47,Light,21,1995,148,263,237,85,0,10,185,77,0,0,159
+262,Avrora,Super Rare,Northern Parliament,CL,55,Medium,19,3450,106,163,226,93,0,11,152,58,0,0,134
+303,Richmond,Normal,Eagle Union,CL,69,Light,35,3312,144,287,210,127,0,8,185,94,0,0,156
+304,Honolulu,Rare,Eagle Union,CL,50,Light,32,3550,166,313,0,106,0,9,183,100,0,0,162
+305,St. Louis,Elite,Eagle Union,CL,65,Light,32,3688,174,323,0,106,0,10,188,102,0,0,170
+308,Sendai,Rare,Sakura Empire,CL,42,Light,35,2599,152,282,330,128,0,9,188,109,0,0,156
+309,Jintsuu,Elite,Sakura Empire,CL,38,Light,35,2676,158,291,341,128,0,10,194,101,0,0,156
+310,Naka,Rare,Sakura Empire,CL,53,Light,35,2599,153,292,341,128,0,9,188,105,0,0,156
+321,Agano,Elite,Sakura Empire,CL,21,Light,35,3233,150,330,358,123,0,10,171,80,0,0,152
+322,Noshiro,Super Rare,Sakura Empire,CL,55,Light,35,3354,177,341,378,123,0,11,183,99,0,0,176
+324,Sakawa,Super Rare,Sakura Empire,CL,74,Light,35,3452,172,341,382,134,0,11,182,102,0,0,179
+327,Fiji,Rare,Royal Navy,CL,11,Light,32,3670,161,261,272,119,0,9,185,119,0,0,176
+328,Jamaica,Rare,Royal Navy,CL,67,Light,32,3721,160,336,272,119,0,9,185,125,0,0,175
+329,Montpelier,Super Rare,Eagle Union,CL,72,Light,32,4461,172,341,0,109,0,11,196,105,0,0,168
+330,Denver,Elite,Eagle Union,CL,69,Light,32,4406,159,328,0,109,0,10,188,102,0,0,165
+335,Little Bel,Elite,Royal Navy,CL,89,Light,32,3306,161,289,329,113,0,10,188,150,0,0,164
+349,Émile Bertin,Elite,Iris Libre,CL,67,Light,34,3259,163,278,277,139,0,10,175,146,0,0,175
+360,Memphis,Rare,Eagle Union,CL,67,Light,35,3378,148,301,215,120,0,9,188,84,0,0,156
+361,Newcastle,Rare,Royal Navy,CL,78,Light,32,3773,147,354,289,119,0,9,181,86,0,0,164
+366,Concord,Rare,Eagle Union,CL,67,Light,35,3378,148,301,218,120,0,9,188,84,0,0,156
+371,Sirius,Super Rare,Royal Navy,CL,70,Light,32,3831,153,393,163,114,0,11,185,166,0,0,173
+372,Curacoa,Rare,Royal Navy,CL,24,Light,29,3050,136,157,0,109,0,9,185,54,0,0,173
+373,Curlew,Rare,Royal Navy,CL,45,Light,29,2854,130,182,0,109,0,9,193,54,0,0,170
+390,Lena,Elite,Eagle Union,CL,33,Light,32,3321,169,323,0,107,0,10,188,109,0,0,177
+391,Clevelad,Elite,Eagle Union,CL,71,Light,32,3684,164,330,0,111,0,10,183,102,0,0,163
+392,Li'l Sandy,Elite,Eagle Union,CL,85,Light,32,3301,132,443,163,113,0,10,185,195,0,0,173
+393,Swiftsure,Super Rare,Royal Navy,CL,44,Light,32,3884,166,310,369,113,0,11,193,150,0,0,168
+404,San Juan,Rare,Eagle Union,CL,77,Light,32,3598,131,438,159,112,0,9,181,188,0,0,173
+405,Birmingham,Elite,Eagle Union,CL,48,Light,32,4285,170,334,0,111,0,10,188,100,0,0,174
+408,Black Prince,Elite,Royal Navy,CL,58,Light,32,3691,144,385,155,115,0,10,182,150,0,0,173
+420,Cleveland µ,Elite,Eagle Union,CL,71,Light,32,3925,164,330,0,113,0,10,191,102,0,0,168
+421,Sheffield µ,Elite,Royal Navy,CL,78,Light,32,3641,155,358,299,119,0,10,185,89,0,0,164
+423,Glasgow,Rare,Royal Navy,CL,81,Light,32,3773,153,351,276,119,0,9,174,101,0,0,161
+428,Biloxi,Elite,Eagle Union,CL,68,Light,32,4406,153,330,0,113,0,10,190,102,0,0,173
+434,Pamiat' Merkuria,Elite,Northern Parliament,CL,88,Medium,23,3130,84,148,144,103,0,10,141,56,0,0,140
+435,Kirov,Super Rare,Northern Parliament,CL,52,Light,36,4168,185,351,300,130,0,11,190,156,0,0,162
+436,Chapayev,Super Rare,Northern Parliament,CL,68,Light,33,4451,174,341,0,110,0,11,197,149,0,0,168
+445,Reno,Super Rare,Eagle Union,CL,52,Light,32,3842,150,489,199,112,0,11,193,206,0,0,173
+448,Marblehead,Rare,Eagle Union,CL,55,Light,35,3378,137,292,248,120,0,9,188,84,0,0,156
+454,Jeanne d'Arc,Super Rare,Iris Libre,CL,83,Light,25,3298,155,282,268,94,0,11,185,150,0,0,183
+456,La Galissonnière,Elite,Vichya Dominion,CL,35,Light,31,3565,174,316,283,136,0,10,178,148,0,0,177
+463,Hermione,Super Rare,Royal Navy,CL,58,Light,32,3831,161,389,175,113,0,11,196,190,0,0,164
+476,Dido µ,Super Rare,Royal Navy,CL,85,Light,32,4012,150,433,180,114,0,11,196,171,0,0,170
+486,Nürnberg,Elite,Iron Blood,CL,80,Light,32,3900,178,411,308,116,0,10,194,102,0,0,163
+493,Ying Swei,Elite,Dragon Empery,CL,20,Medium,20,2499,71,133,235,83,0,9,141,73,0,0,159
+494,Chao Ho,Elite,Dragon Empery,CL,20,Medium,20,2596,71,131,235,83,0,9,141,73,0,0,159
+495,Penelope,Elite,Royal Navy,CL,52,Light,32,2982,161,341,282,119,0,10,196,119,0,0,175
+498,Murmansk,Elite,Northern Parliament,CL,65,Light,35,3475,159,299,265,120,0,10,193,130,0,0,156
+501,Duca degli Abruzzi,Super Rare,Sardegna Empire,CL,85,Light,35,4460,161,379,324,113,0,11,183,99,0,0,177
+514,Boise,Elite,Eagle Union,CL,70,Light,32,3644,167,334,0,106,0,10,191,102,0,0,168
+525,Magdeburg,Super Rare,Iron Blood,CL,50,Light,36,3748,190,385,317,127,0,11,207,149,0,0,168
+530,Charybdis,Super Rare,Royal Navy,CL,51,Light,32,3988,139,439,188,114,0,11,196,179,0,0,170
+531,Hai Tien,Elite,Dragon Empery,CL,31,Medium,24,3065,102,165,259,89,0,10,152,80,0,0,162
+532,Hai Chi,Elite,Dragon Empery,CL,62,Medium,24,3060,94,171,265,89,0,10,152,80,0,0,162
+547,Emden,Super Rare,Iron Blood,CL,85,Light,23,3805,159,305,293,110,0,11,204,92,0,0,171
+548,Elbing,Elite,Iron Blood,CL,30,Light,27,3450,128,295,215,120,0,10,202,82,0,0,156
+551,Bellona,Elite,Royal Navy,CL,56,Light,32,3877,148,419,166,115,0,10,182,142,0,0,176
+557,Enterprise (Royal Navy),Elite,Royal Navy,CL,83,Light,33,3620,153,349,290,120,0,10,188,143,0,0,175
+559,Giuseppe Garibaldi,Super Rare,Sardegna Empire,CL,88,Light,35,4399,181,375,324,113,0,11,183,99,0,0,182
+577,Kuybyshev,Super Rare,Northern Parliament,CL,73,Light,33,4392,178,338,0,110,0,11,199,149,0,0,170
+584,Scylla,Super Rare,Royal Navy,CL,56,Light,32,4012,150,445,180,114,0,11,196,171,0,0,177
+588,Voroshilov,Super Rare,Northern Parliament,CL,52,Light,36,4480,150,408,199,148,0,11,190,156,0,0,162
+592,Regensburg,Super Rare,Iron Blood,CL,46,Light,36,3748,174,385,331,127,0,11,207,149,0,0,168
+598,Marseillaise,Super Rare,Vichya Dominion,CL,46,Light,31,3700,177,328,290,136,0,11,196,149,0,0,174
+603,Guichen,Super Rare,Iris Libre,CL,50,Light,33,3795,193,385,304,139,0,11,194,154,0,0,188
+609,Houston II,Super Rare,Eagle Union,CL,80,Light,32,4461,172,385,0,113,0,11,196,105,0,0,168
+622,Chi An,Elite,Dragon Empery,CL,20,Medium,20,2409,77,124,237,83,0,10,147,73,0,0,161
+631,Liverpool,Elite,Royal Navy,CL,60,Light,32,3994,158,324,284,115,0,10,181,143,0,0,161
+635,Noshiro µ,Super Rare,Sakura Empire,CL,55,Light,35,3170,181,341,386,123,0,11,182,84,0,0,179
+638,Boise µ,Elite,Eagle Union,CL,70,Light,32,3644,166,336,0,106,0,10,188,102,0,0,170
+657,Fargo,Super Rare,Eagle Union,CL,75,Light,32,4463,175,350,0,109,0,11,199,107,0,0,170
+661,Watarase,Super Rare,Sakura Empire,CL,50,Light,37,3600,188,346,379,127,0,11,186,99,0,0,179
+662,Ayase,Elite,Sakura Empire,CL,38,Light,35,2676,158,291,341,128,0,10,194,101,0,0,156
+671,Duisburg,Super Rare,Iron Blood,CL,54,Light,36,3748,182,385,327,127,0,11,207,149,0,0,168
+675,Hai Yung,Elite,Dragon Empery,CL,45,Medium,20,3010,93,160,256,85,0,10,158,77,0,0,161
+681,Bartolomeo Colleoni,Elite,Sardegna Empire,CL,35,Light,37,2967,153,365,308,113,0,10,182,94,0,0,177
+683,Santa Fe,Super Rare,Eagle Union,CL,75,Light,32,4461,175,385,0,109,0,11,196,105,0,0,168
+686,De Zeven Provinciën,Super Rare,Kingdom of Tulipa,CL,85,Light,32,4606,171,406,274,102,0,11,215,109,0,0,167
+688,Oleg,Elite,Northern Parliament,CL,70,Medium,23,4246,84,175,144,103,0,10,147,56,0,0,140
+690,Cleopatra,Super Rare,Royal Navy,CL,68,Light,32,4109,161,445,185,115,0,11,196,190,0,0,182
+692,Trinidad,Elite,Royal Navy,CL,10,Light,32,4120,171,282,287,110,0,10,194,125,0,0,164
+702,Duguay-Trouin,Elite,Iris Libre,CL,80,Light,33,3325,181,305,335,145,0,10,194,143,0,0,161
+10001,Neptune (Neptunia),Elite,Neptunia,CL,73,Light,31,3509,154,308,293,118,0,10,174,123,0,0,162
+10005,Purple Heart,Super Rare,Neptunia,CL,87,Light,31,3779,168,319,313,120,0,11,181,130,0,0,162
+10033,Rurutie,Super Rare,Utawarerumono,CL,66,Light,32,4202,152,280,251,103,0,11,171,106,0,0,167
+10064,Misaki,Super Rare,Venus Vacation,CL,89,Light,33,3971,170,333,0,109,0,11,197,156,0,0,167
+10067,Monica,Elite,Venus Vacation,CL,88,Light,32,3861,150,363,296,118,0,10,184,88,0,0,164
+10071,Haruka Amami,Super Rare,The Idolmaster,CL,83,Light,32,4114,165,366,365,113,0,11,195,149,0,0,165
+10081,Rikka Takarada,Super Rare,SSSS,CL,55,Light,35,4655,181,395,374,121,0,11,195,165,0,0,163
+10083,Hass,Elite,SSSS,CL,55,Light,33,3653,142,348,290,120,0,10,181,144,0,0,166
+10091,Reisalin Stout,Super Rare,Atelier Ryza,CL,66,Light,35,4542,146,386,380,121,0,11,202,165,0,0,166
+10101,Asuka,Super Rare,Senran Kagura,CL,90,Light,32,3734,181,383,360,111,0,11,195,149,0,0,160
+10113,Momo Belia Deviluke,Super Rare,To LOVE-Ru,CL,80,Light,32,4399,174,375,366,99,0,11,195,149,0,0,168
+10132,Isla von Duerer,Super Rare,Atelier Yumia,CL,65,Light,32,4688,185,367,347,124,0,11,196,150,0,0,165
+20001,Neptune,Priority,Royal Navy,CL,0,Light,33,4742,175,371,359,100,0,12,166,155,0,0,162
+20007,Seattle,Priority,Eagle Union,CL,0,Light,33,5376,182,373,0,100,0,12,158,157,0,0,161
+20015,Mainz,Priority,Iron Blood,CL,0,Medium,25,5382,171,361,197,78,0,12,185,122,0,0,131
+20023,Plymouth,Decisive,Royal Navy,CL,0,Light,31,5684,198,341,399,103,0,14,181,155,0,0,183
+20025,Harbin,Priority,Dragon Empery,CL,0,Light,33,3665,153,415,371,188,0,12,196,149,0,0,171
+20029,Shimanto,Priority,Sakura Empire,CL,0,Light,34,5376,173,455,435,96,0,12,158,149,0,0,167
+20037,Bayard,Priority,Iris Libre,CL,0,Light,34,4869,182,375,369,119,0,12,207,149,0,0,166
+20041,Dmitri Donskoi,Priority,Northern Parliament,CL,0,Light,36,4813,180,384,316,125,0,12,196,149,0,0,172
+30003,Helena META,Super Rare,META,CL,33,Light,33,4246,177,419,0,97,0,12,198,159,0,0,187
+30011,Memphis META,Elite,META,CL,67,Light,35,3434,152,307,219,100,0,11,193,90,0,0,154
+30018,Sheffield META,Elite,META,CL,78,Light,32,3851,163,353,304,108,0,11,193,99,0,0,169
+30020,La Galissonnière META,Elite,META,CL,35,Light,31,3461,190,313,320,124,0,11,178,157,0,0,181
+30025,Jintsuu META,Super Rare,META,CL,38,Light,35,3081,177,327,408,116,0,12,207,111,0,0,165
+30028,Kirov META,Super Rare,META,CL,52,Light,37,4290,210,348,304,111,0,12,190,166,0,0,161
+30030,Pamiat' Merkuria META,Super Rare,META,CL,88,Medium,23,3578,142,217,196,107,0,12,146,58,0,0,151
+3033,Helena (Retrofit),Super Rare,Eagle Union,CL,33,Light,32,3928,184,413,0,106,0,10,193,111,,,195
+3035,Juneau (Retrofit),Elite,Eagle Union,CL,18,Light,32,3838,131,501,209,112,0,9,186,220,,,173
+3036,San Diego (Retrofit),Ultra Rare,Eagle Union,CL,85,Light,32,4082,184,568,170,112,0,11,213,204,,,173
+3104,Leander (Retrofit),Rare,Royal Navy,CL,44,Light,32,3562,198,328,309,128,0,8,179,127,,,149
+3105,Achilles (Retrofit),Elite,Royal Navy,CL,54,Light,32,3284,216,301,363,114,0,9,182,130,,,152
+3106,Ajax (Retrofit),Elite,Royal Navy,CL,74,Light,32,3284,216,301,363,114,0,9,182,130,,,152
+3179,Yuubari (Retrofit),Super Rare,Sakura Empire,CL,53,Light,35,2393,163,339,290,124,0,8,205,85,,,163
+3183,Isuzu (Retrofit),Elite,Sakura Empire,CL,33,Light,36,3529,121,400,233,119,0,9,178,135,,,164
+3186,Kinu (Retrofit),Super Rare,Sakura Empire,CL,52,Light,36,3193,160,325,358,124,0,10,188,125,,,154
+3187,Abukuma (Retrofit),Rare,Sakura Empire,CL,43,Light,36,3199,162,284,347,132,0,8,180,94,,,149
+3239,Karlsruhe (Retrofit),Rare,Iron Blood,CL,39,Light,32,3690,175,356,321,126,0,8,182,89,,,157
+3240,Köln (Retrofit),Rare,Iron Blood,CL,62,Light,32,3690,175,356,321,126,0,8,182,107,,,157
+3241,Leipzig (Retrofit),Elite,Iron Blood,CL,67,Light,32,3816,170,394,329,121,0,9,193,100,,,163
+3257,Yat Sen (Retrofit),Super Rare,Dragon Empery,CL,64,Light,19,2168,177,389,0,108,0,10,190,56,,,150
+3258,Ning Hai (Retrofit),Super Rare,Dragon Empery,CL,51,Light,23,2238,203,310,237,123,0,10,190,77,,,156
+3259,Ping Hai (Retrofit),Super Rare,Dragon Empery,CL,47,Light,21,2205,203,278,237,120,0,10,190,77,,,159
+3308,Sendai (Retrofit),Elite,Sakura Empire,CL,42,Light,35,2839,172,282,395,128,0,9,193,109,,,156
+3309,Jintsuu (Retrofit),Super Rare,Sakura Empire,CL,38,Light,35,2916,178,306,406,128,0,10,199,101,,,156
+3349,Émile Bertin (Retrofit),Super Rare,Iris Libre,CL,67,Light,34,3499,193,333,302,139,0,10,180,146,,,180
+3361,Newcastle (Retrofit),Elite,Royal Navy,CL,78,Light,32,4013,177,394,289,119,0,9,196,86,,,169
+3372,Curacoa (Retrofit),Elite,Royal Navy,CL,24,Light,29,3290,176,202,0,109,0,9,185,54,,,178
+3373,Curlew (Retrofit),Elite,Royal Navy,CL,45,Light,29,3094,170,227,0,109,0,9,193,54,,,175
+3434,Pamiat' Merkuria (Retrofit),Super Rare,Northern Parliament,CL,88,Medium,23,3370,129,198,164,103,0,10,141,56,,,150

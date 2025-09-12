@@ -1,0 +1,40 @@
+ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpedo,Evasion,Aviation,Oil Consumption,Reload,Anti-Submarine,Oxygen,Ammunition,Accuracy
+338,I-19,Super Rare,Sakura Empire,SS,19,Light,18,349,11,0,106,10,0,2,41,0,200,2,58
+339,I-26,Elite,Sakura Empire,SS,26,Light,18,333,11,0,100,10,0,2,40,0,218,2,56
+340,I-58,Elite,Sakura Empire,SS,58,Light,14,335,11,0,97,7,0,2,29,0,268,2,58
+341,U-81,Super Rare,Iron Blood,SS,23,Light,14,211,9,0,107,7,0,2,40,0,188,2,60
+342,Dace,Elite,Eagle Union,SS,68,Light,16,273,13,0,97,9,0,2,33,0,243,2,61
+343,U-47,Super Rare,Iron Blood,SS,32,Light,14,209,9,0,102,7,0,2,41,0,193,2,61
+344,U-557,Elite,Iron Blood,SS,18,Light,14,203,8,0,96,7,0,2,31,0,188,2,57
+350,Surcouf,Elite,Iris Libre,SS,60,Light,14,0,0,0,0,0,0,0,0,0,180,2,0
+358,Albacore,Super Rare,Eagle Union,SS,79,Light,16,310,11,0,101,9,0,2,35,0,243,2,66
+381,I-13,Super Rare,Sakura Empire,SSV,20,Light,13,428,9,0,99,7,47,2,40,0,198,2,59
+386,U-556,Elite,Iron Blood,SS,45,Light,14,203,7,0,96,7,0,2,31,0,188,2,61
+387,U-73,Elite,Iron Blood,SS,35,Light,14,202,8,0,101,7,0,2,31,0,188,2,57
+396,I-25,Elite,Sakura Empire,SS,25,Light,18,314,12,0,99,10,0,2,26,0,218,2,61
+397,I-56,Elite,Sakura Empire,SS,46,Light,14,335,11,0,97,7,0,2,23,0,248,2,57
+398,I-168,Super Rare,Sakura Empire,SS,22,Light,18,321,12,0,104,9,0,2,42,0,195,2,59
+399,U-101,Super Rare,Iron Blood,SS,68,Light,14,209,9,0,102,7,0,2,41,0,190,2,60
+400,U-522,Elite,Iron Blood,SS,22,Light,14,241,8,0,97,7,0,2,31,0,228,2,61
+402,Cavalla,Super Rare,Eagle Union,SS,78,Light,16,306,12,0,101,9,0,2,34,0,243,2,66
+416,U-110,Elite,Iron Blood,SS,28,Light,14,236,9,0,96,7,0,2,30,0,208,2,61
+446,Bluegill,Elite,Eagle Union,SS,65,Light,16,273,13,0,96,9,0,2,32,0,243,2,60
+467,U-96,Super Rare,Iron Blood,SS,62,Light,14,211,10,0,103,7,0,2,40,0,188,2,63
+477,Albacore µ,Elite,Eagle Union,SS,79,Light,16,297,11,0,98,9,0,2,34,0,243,2,66
+484,U-37,Super Rare,Iron Blood,SS,72,Light,14,250,8,0,104,7,0,2,41,0,218,2,61
+492,U-410,Elite,Iron Blood,SS,50,Light,14,203,8,0,97,7,0,2,31,0,188,2,59
+503,Torricelli,Elite,Sardegna Empire,SS,16,Light,14,245,7,0,96,7,0,2,31,0,208,2,61
+513,Archerfish,Super Rare,Eagle Union,SS,90,Light,16,310,12,0,102,9,0,2,35,0,243,2,66
+519,Nautilus,Elite,Eagle Union,SS,69,Light,13,396,21,0,96,7,0,2,34,0,263,2,66
+528,U-1206,Elite,Iron Blood,SS,20,Light,18,203,8,0,96,7,0,2,31,0,198,2,60
+558,Leonardo da Vinci,Super Rare,Sardegna Empire,SS,57,Light,18,275,9,0,104,7,0,2,37,0,232,2,66
+620,Flasher,Super Rare,Eagle Union,SS,82,Light,21,308,11,0,102,9,0,2,35,0,243,2,67
+650,U-31,Elite,Iron Blood,SS,32,Light,18,188,8,0,98,7,0,2,32,0,188,2,57
+658,Herring,Elite,Eagle Union,SS,54,Light,20,273,13,0,97,8,0,2,34,0,243,2,67
+679,Maggiore Baracca,Super Rare,Sardegna Empire,SS,19,Light,18,275,8,0,102,7,0,2,37,0,232,2,62
+695,U-552,Super Rare,Iron Blood,SS,52,Light,14,211,11,0,108,7,0,2,41,0,188,2,69
+10053,Minato Aqua,Super Rare,Hololive,SS,64,Light,18,271,12,0,104,10,0,3,40,0,268,2,61
+10076,Ami Futami,Elite,The Idolmaster,SS,74,Light,23,251,9,0,99,9,0,2,43,0,248,2,69
+10077,Mami Futami,Elite,The Idolmaster,SS,74,Light,23,251,9,0,99,9,0,2,43,0,248,2,69
+10103,Homura,Super Rare,Senran Kagura,SS,87,Light,23,335,9,0,102,9,0,3,35,0,208,2,71
+30021,U-556 META,Super Rare,META,SS,45,Light,18,293,10,0,107,6,0,4,41,0,208,2,46

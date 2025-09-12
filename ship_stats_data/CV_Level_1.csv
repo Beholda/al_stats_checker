@@ -1,0 +1,136 @@
+ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpedo,Evasion,Aviation,Oil Consumption,Reload,Anti-Submarine,Oxygen,Ammunition,Accuracy
+070,Long Island,Rare,Eagle Union,CVL,68,Medium,16,782,0,48,0,15,52,3,67,24,0,0,28
+071,Bogue,Normal,Eagle Union,CVL,78,Medium,18,654,0,47,0,15,52,2,66,36,0,0,28
+072,Langley,Normal,Eagle Union,CVL,32,Medium,15,744,0,46,0,15,38,2,45,23,0,0,26
+073,Lexington,Elite,Eagle Union,CV,35,Medium,33,1183,0,57,0,13,75,4,41,0,0,0,32
+074,Saratoga,Elite,Eagle Union,CV,66,Medium,33,1183,0,57,0,13,75,4,41,0,0,0,32
+075,Ranger,Normal,Eagle Union,CVL,71,Medium,29,797,0,46,0,19,44,2,48,26,0,0,29
+076,Yorktown,Elite,Eagle Union,CV,39,Medium,32,975,0,60,0,13,75,4,45,0,0,0,33
+077,Enterprise,Super Rare,Eagle Union,CV,93,Medium,32,1042,0,62,0,19,83,4,49,0,0,0,37
+078,Hornet,Elite,Eagle Union,CV,15,Medium,32,979,0,58,0,13,76,4,45,0,0,0,33
+079,Wasp,Rare,Eagle Union,CV,20,Medium,29,816,0,51,0,12,62,3,43,0,0,0,30
+140,Hermes,Normal,Royal Navy,CVL,41,Medium,25,687,0,46,0,18,52,2,64,25,0,0,26
+142,Unicorn,Elite,Royal Navy,CVL,78,Medium,24,890,0,50,0,18,57,3,66,26,0,0,27
+143,Eagle,Elite,Royal Navy,CV,40,Medium,24,1024,40,58,0,10,70,4,41,0,0,0,29
+144,Ark Royal,Elite,Royal Navy,CV,87,Medium,31,1027,0,58,0,13,76,4,43,0,0,0,35
+145,Illustrious,Super Rare,Royal Navy,CV,44,Heavy,30,1123,0,56,0,13,76,4,43,0,0,0,31
+146,Victorious,Super Rare,Royal Navy,CV,82,Heavy,30,1053,0,54,0,13,78,4,38,0,0,0,31
+147,Formidable,Super Rare,Royal Navy,CV,75,Heavy,30,1090,0,54,0,12,79,4,43,0,0,0,31
+148,Glorious,Elite,Royal Navy,CV,32,Medium,30,1062,0,55,0,12,68,4,40,0,0,0,30
+218,Hiyou,Rare,Sakura Empire,CVL,43,Medium,25,860,0,46,0,19,52,3,58,19,0,0,25
+219,Junyou,Rare,Sakura Empire,CVL,80,Medium,25,860,0,46,0,19,52,3,58,19,0,0,25
+220,Houshou,Elite,Sakura Empire,CVL,79,Medium,25,599,0,48,0,18,53,3,65,22,0,0,26
+221,Zuihou,Super Rare,Sakura Empire,CVL,55,Medium,28,763,0,49,0,19,58,4,72,22,0,0,28
+222,Shouhou,Rare,Sakura Empire,CVL,24,Medium,28,714,0,46,0,19,52,3,65,20,0,0,25
+223,Ryuujou,Elite,Sakura Empire,CVL,42,Medium,28,707,0,47,0,24,65,3,66,17,0,0,29
+224,Akagi,Super Rare,Sakura Empire,CV,42,Medium,31,1128,0,61,0,13,78,4,48,0,0,0,31
+225,Kaga,Super Rare,Sakura Empire,CV,42,Medium,28,1159,0,61,0,11,78,4,48,0,0,0,31
+226,Souryuu,Elite,Sakura Empire,CV,36,Medium,34,875,0,59,0,14,74,4,45,0,0,0,29
+227,Hiryuu,Elite,Sakura Empire,CV,36,Medium,34,912,0,59,0,14,74,4,45,0,0,0,29
+228,Shoukaku,Super Rare,Sakura Empire,CV,49,Medium,34,1152,0,66,0,14,79,4,44,0,0,0,30
+229,Zuikaku,Super Rare,Sakura Empire,CV,73,Medium,34,1231,0,61,0,14,79,4,44,0,0,0,30
+230,Taihou,Super Rare,Sakura Empire,CV,36,Heavy,33,1240,0,60,0,13,76,4,44,0,0,0,28
+231,Shinano,Ultra Rare,Sakura Empire,CV,32,Heavy,28,1462,0,60,0,11,84,8,46,0,0,0,27
+252,Graf Zeppelin,Super Rare,Iron Blood,CV,45,Medium,33,1317,0,60,0,14,81,4,47,0,0,0,30
+356,Centaur,Super Rare,Royal Navy,CVL,73,Medium,28,1105,0,50,0,19,80,4,59,31,0,0,31
+357,Essex,Super Rare,Eagle Union,CV,90,Medium,33,1108,0,63,0,13,83,4,48,0,0,0,30
+376,Chaser,Elite,Royal Navy,CVL,82,Medium,18,778,0,48,0,15,56,3,68,35,0,0,28
+377,Independence,Elite,Eagle Union,CVL,78,Medium,31,800,0,50,0,21,58,3,67,26,0,0,29
+378,Shangri-La,Super Rare,Eagle Union,CV,83,Medium,33,1108,0,63,0,13,82,4,48,0,0,0,31
+380,Bunker Hill,Super Rare,Eagle Union,CV,35,Medium,33,1102,0,58,0,13,81,4,48,0,0,0,28
+384,Akagi-chan,Elite,Sakura Empire,CV,42,Medium,31,1077,0,59,0,13,75,4,46,0,0,0,31
+385,Zeppy,Elite,Iron Blood,CV,45,Medium,33,1228,32,58,0,16,71,4,41,0,0,0,29
+403,Bataan,Elite,Eagle Union,CVL,65,Medium,31,835,0,52,0,21,65,3,73,17,0,0,29
+419,Akagi µ,Super Rare,Sakura Empire,CV,42,Medium,31,1128,0,61,0,13,78,4,48,0,0,0,31
+426,Ryuuhou,Super Rare,Sakura Empire,CVL,70,Medium,26,824,0,52,0,19,59,4,69,27,0,0,27
+442,Intrepid,Super Rare,Eagle Union,CV,68,Medium,33,1106,0,63,0,13,82,4,48,0,0,0,29
+447,Casablanca,Rare,Eagle Union,CVL,65,Medium,19,759,0,48,0,16,53,3,71,28,0,0,24
+458,Béarn,Elite,Iris Libre,CV,42,Medium,21,1072,32,58,47,9,71,4,41,0,0,0,29
+459,Little Illustrious,Elite,Royal Navy,CV,44,Heavy,30,1018,0,50,0,13,72,4,41,0,0,0,29
+462,Perseus,Super Rare,Royal Navy,CVL,82,Medium,25,916,0,49,0,18,61,4,62,35,0,0,28
+470,Chitose,Elite,Sakura Empire,CVL,57,Medium,29,727,0,49,0,20,65,3,68,22,0,0,26
+471,Chiyoda,Elite,Sakura Empire,CVL,57,Medium,29,801,0,49,0,20,65,3,66,22,0,0,26
+473,Princeton,Elite,Eagle Union,CVL,49,Medium,31,799,0,48,0,22,64,3,66,24,0,0,29
+474,Taihou µ,Super Rare,Sakura Empire,CV,36,Heavy,33,1240,0,58,0,13,76,4,44,0,0,0,26
+480,Illustrious µ,Super Rare,Royal Navy,CV,44,Heavy,30,1115,0,55,0,13,77,4,43,0,0,0,31
+482,Peter Strasser,Super Rare,Iron Blood,CV,45,Medium,33,1317,0,58,0,14,81,4,51,0,0,0,35
+485,Weser,Elite,Iron Blood,CVL,30,Medium,32,787,0,49,0,21,60,3,66,17,0,0,29
+502,Aquila,Super Rare,Sardegna Empire,CV,40,Medium,30,1093,0,69,0,12,76,4,47,0,0,0,35
+511,Ticonderoga,Super Rare,Eagle Union,CV,72,Medium,33,1104,0,63,0,13,83,4,48,0,0,0,30
+516,Little Enterprise,Elite,Eagle Union,CV,93,Medium,32,983,0,56,0,13,77,4,43,0,0,0,32
+520,Katsuragi,Super Rare,Sakura Empire,CV,75,Medium,32,1014,0,58,0,13,80,4,44,0,0,0,32
+526,Elbe,Elite,Iron Blood,CVL,30,Medium,21,820,0,50,0,17,62,3,68,17,0,0,28
+534,Chen Hai,Elite,Dragon Empery,CVL,45,Medium,10,604,28,30,0,13,56,3,68,0,0,0,32
+538,Volga,Super Rare,Northern Parliament,CV,50,Medium,30,1194,0,69,0,12,75,4,45,0,0,0,35
+540,Impero,Super Rare,Sardegna Empire,CV,32,Medium,30,1235,0,63,0,12,82,4,45,0,0,0,31
+553,Indomitable,Super Rare,Royal Navy,CV,42,Heavy,30,1090,0,58,0,13,82,4,44,0,0,0,32
+555,Joffre,Super Rare,Vichya Dominion,CV,28,Medium,33,1080,0,58,0,14,79,4,47,0,0,0,33
+570,Albion,Super Rare,Royal Navy,CVL,78,Medium,28,1105,0,51,0,19,81,4,60,31,0,0,32
+572,Hornet II,Super Rare,Eagle Union,CV,76,Medium,33,1106,0,63,0,13,83,4,48,0,0,0,31
+573,Langley II,Elite,Eagle Union,CVL,70,Medium,31,799,0,51,0,21,64,3,70,24,0,0,29
+574,Yorktown II,Ultra Rare,Eagle Union,CV,70,Medium,33,1248,0,69,0,13,87,8,50,0,0,0,32
+578,Theseus,Super Rare,Royal Navy,CVL,71,Medium,25,826,0,49,0,18,81,4,61,30,0,0,32
+579,Hwah Jah,Elite,Dragon Empery,CVL,53,Medium,12,802,0,27,0,13,62,3,64,0,0,0,28
+581,Implacable,Ultra Rare,Royal Navy,CV,79,Heavy,32,1151,0,62,0,13,84,8,46,0,0,0,32
+583,Argus,Elite,Royal Navy,CVL,81,Medium,20,833,0,48,0,16,53,3,65,26,0,0,26
+589,Little Formidable,Elite,Royal Navy,CV,75,Heavy,30,1050,0,52,0,12,76,4,42,0,0,0,31
+591,Jade,Elite,Iron Blood,CVL,28,Medium,21,836,0,50,0,17,62,3,68,17,0,0,28
+594,Taihou-chan,Elite,Sakura Empire,CV,36,Heavy,33,1195,0,58,0,13,72,4,43,0,0,0,28
+599,Painlevé,Super Rare,Iris Libre,CV,28,Medium,33,1080,0,58,0,14,79,4,47,0,0,0,33
+618,San Jacinto,Elite,Eagle Union,CVL,51,Medium,31,835,0,52,0,21,65,3,73,17,0,0,29
+633,Formidable µ,Super Rare,Royal Navy,CV,75,Heavy,30,1082,0,54,0,12,80,4,43,0,0,0,31
+639,Shinano-chan,Elite,Sakura Empire,CV,32,Heavy,28,1312,0,55,0,11,77,4,43,0,0,0,27
+660,Amagi(CV),Ultra Rare,Sakura Empire,CV,23,Medium,31,1267,0,61,0,12,85,8,49,0,0,0,34
+669,Fritz Rumey,Ultra Rare,Iron Blood,CV,50,Medium,34,1491,41,61,0,14,86,8,53,0,0,0,37
+682,Franklin,Super Rare,Eagle Union,CV,80,Medium,33,1106,0,63,0,13,83,4,48,0,0,0,30
+699,Bois Belleau,Super Rare,Iris Libre,CVL,60,Medium,31,866,0,55,0,22,70,4,73,18,0,0,29
+10004,Vert,Elite,Neptunia,CV,93,Medium,28,929,0,54,0,13,71,4,41,0,0,0,30
+10008,Green Heart,Super Rare,Neptunia,CV,95,Medium,28,972,0,56,0,14,75,4,42,0,0,0,30
+10034,Uruuru,Elite,Utawarerumono,CVL,69,Light,26,721,0,48,0,19,44,3,57,17,0,0,27
+10035,Saraana,Elite,Utawarerumono,CVL,96,Light,26,721,0,48,0,19,44,3,57,17,0,0,27
+10036,Fumiruiru,Elite,Utawarerumono,CV,43,Medium,32,862,0,50,0,13,63,4,35,0,0,0,29
+10043,Anniversary Kizuna AI,Super Rare,KizunaAI,CV,66,Medium,32,1068,0,61,0,13,78,4,44,0,0,0,30
+10052,Tokino Sora,Super Rare,Hololive,CV,46,Medium,28,1066,0,64,0,11,80,4,45,0,0,0,35
+10056,Murasaki Shion,Elite,Hololive,CVL,85,Medium,26,835,0,48,0,19,58,3,64,17,0,0,28
+10057,Ookami Mio,Elite,Hololive,CV,53,Medium,26,1027,0,54,0,11,71,4,43,0,0,0,35
+10066,Nyotengu,Elite,Venus Vacation,CV,88,Medium,32,1108,0,58,0,13,71,4,43,0,0,0,30
+10068,Luna,Super Rare,Venus Vacation,CVL,88,Medium,30,1033,0,58,0,20,69,4,64,4,0,0,32
+10072,Chihaya Kisaragi,Super Rare,The Idolmaster,CV,72,Medium,31,1128,0,60,0,13,82,4,53,0,0,0,30
+10086,Chise Asukagawa,Super Rare,SSSS,CV,55,Medium,28,1169,0,58,0,11,77,4,53,0,0,0,30
+10092,Klaudia Valentz,Super Rare,Atelier Ryza,CVL,54,Medium,28,1008,0,49,0,19,77,4,71,20,0,0,32
+10095,Serri Glaus,Elite,Atelier Ryza,CV,40,Medium,28,1097,0,56,0,11,75,4,51,0,0,0,35
+10104,Yumi,Super Rare,Senran Kagura,CV,92,Medium,30,1128,0,63,0,12,80,4,43,0,0,0,32
+10106,Murasaki,Elite,Senran Kagura,CVL,105,Medium,28,836,0,48,0,19,74,3,68,20,0,0,32
+10116,Yui Kotegawa,Elite,To LOVE-Ru,CV,88,Medium,31,1087,0,60,0,13,77,4,43,0,0,0,37
+10122,DEAD MASTER,Super Rare,BLACK★ROCK SHOOTER (Nation),CV,17,Medium,31,1107,0,61,0,13,83,4,51,0,0,0,32
+10131,Yumia Liessfeldt,Super Rare,Atelier Yumia,CVL,26,Medium,21,1029,0,51,0,17,82,4,67,25,0,0,29
+20019,Hakuryuu,Decisive,Sakura Empire,CV,0,Heavy,34,1417,0,61,0,14,88,9,46,0,0,0,32
+20021,August von Parseval,Priority,Iron Blood,CV,0,Medium,31,1273,0,62,0,13,83,8,44,0,0,0,37
+20026,Chkalov,Priority,Northern Parliament,CV,0,Medium,32,1105,0,61,0,13,84,8,44,0,0,0,36
+20036,Admiral Nakhimov,Decisive,Northern Parliament,CV,0,Medium,31,1613,0,56,0,12,89,9,47,0,0,0,37
+30001,Hiryuu META,Super Rare,META,CV,36,Medium,34,946,0,59,0,11,80,8,49,0,0,0,23
+30002,Ark Royal META,Super Rare,META,CV,87,Medium,31,1066,0,61,0,9,80,8,42,0,0,0,27
+30004,Souryuu META,Super Rare,META,CV,36,Medium,34,908,0,58,0,10,80,8,49,0,0,0,26
+30006,Hiyou META,Elite,META,CVL,43,Medium,26,1128,0,48,0,17,61,7,71,17,0,0,26
+30008,Junyou META,Elite,META,CVL,80,Medium,26,1128,0,48,0,17,61,7,71,17,0,0,26
+30026,Princeton META,Elite,META,CVL,49,Medium,32,814,0,48,0,16,67,7,66,17,0,0,25
+30033,Béarn META,Super Rare,META,CV,42,Medium,22,1070,33,61,0,7,81,8,42,0,0,0,21
+30039,Houshou META,Elite,META,CVL,79,Medium,25,619,27,49,0,14,56,7,65,27,0,0,20
+30041,Taihou META,Super Rare,META,CV,36,Heavy,33,1322,0,61,0,10,78,8,45,0,0,0,21
+30045,Hornet META,Super Rare,META,CV,15,Medium,33,1017,0,60,0,10,79,8,47,0,0,0,25
+30048,Glorious META,Super Rare,META,CV,32,Medium,30,1136,0,58,0,9,75,8,48,0,0,0,24
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,

@@ -14,6 +14,19 @@ REPLACEMENTS = {
     "µ": "muse"
 }
 
+VALID_STATS = {
+    "luck", "speed", "health", "firepower", "anti-air", "torpedo",
+    "evasion", "aviation", "oil consumption", "reload",
+    "anti-submarine", "oxygen", "ammunition", "accuracy", "all"
+}
+
+AVERAGE_STATS_OPTIONS = {
+    "1": ("Compare to mean/median of all ships", compare_to_all),
+    "2": ("Compare to mean/median of same rarity", compare_to_rarity),
+    "3": ("Compare to ships above average", compare_to_above_average),
+    "4": ("Rank this ship among all ships", rank_ship),
+}
+
 """
 Functionality:
 Search ship, compare stats to averages
@@ -102,23 +115,63 @@ def show_average_stats(ship_data: dict) -> None:
     """
     selected_ship = ""
     selected_level = 1
+    stats_input = ""
     selected_stats = []
+    invalid = []
 
     while True:
         print("\nExplore the average stats of a ship.")
         print("Lookup rules:")
-        print("    -For any ship with special character in their names, e.g. Lützow, simply type the most intuitive equivalent, e.g. lutzow.")
-        print("    -For muse ships, type the word 'muse' in place of the muse special character, e.g. roon muse")
+        print("-For any ship with special character in their names, e.g. Lützow, simply type the most intuitive equivalent, e.g. lutzow.")
+        print("-For muse ships, type the word 'muse' in place of the muse special character, e.g. roon muse")
 
         selected_ship = str(input("\nSelect ship: "))
 
-        print("Pick the level of the ship at which to show the stats:    -1    -100    -120    125")
+        print("Pick the level of the ship at which to show the stats.")
+        print("Options: 1, 100, 120, 125")
 
         selected_level = str(input("\nSelect level: "))
 
-        print("""Options: luck, speed, health, firepower, anti-air, torpedo, evasion, aviation, oil consumption
-              reload, anti-submarine, oxygen, ammunition, accuracy
-        """)
+        print(f"Options: {", ".join(sorted(VALID_STATS))}")
+        print("Separate each choice by commas e.g. speed,anti-air,firepower,oil consumption,reload")
+
+        while True: 
+            stats_input = str(input("\nSelect stats: "))
+            for stat in stats_input.split(","):
+                cleaned = stat.strip() # remove whitespace
+                lowered = cleaned.lower() # make inputs lower case
+                selected_stats.append(lowered)
+
+            for stat_validity in selected_stats:
+                if stat_validity not in VALID_STATS:
+                    invalid.append(stat_validity)
+            
+            if invalid:
+                print(f"INVALID INPUT(S): {', '.join(invalid)}")
+                print("Please choose from:", ", ".join(sorted(VALID_STATS)))
+            else:
+                break
+        
+        # comparisons are always only done with ships within the same class as that's what's relevant
+        # compare this ship's stats to means and medians of all ships
+        # compare this ship's stats to means and medians of all ships of the same rarity
+        # compare this ship's stats to means and medians of all ships whose stats are above the median
+        # (the idea of the above is to compare it to the ships that are "good")
+        # show where this ship is ranked in that stat among all ships
+        while True:
+            print("Select which metric by which you wish to compare this ship's stats.")
+            print("Note that metrics are drawn only from the ships of the same class as this ship.")
+            print("Subsets of a class are simply considered to be within that class. For example, battlecruisers are considered battleships for simplicity")
+            
+            for key, (desc, _) in AVERAGE_STATS_OPTIONS.items():
+                print(f"{key}. {desc}")
+            
+            choice = input("Enter choice: ").strip()
+            if choice in AVERAGE_STATS_OPTIONS:
+                _, func = AVERAGE_STATS_OPTIONS[choice]
+                func(selected_ship, selected_level, selected_stats, ship_data)
+            else:
+                print("Invalid choice, please try again.")
 
 def compare_ships(ship_data: dict) -> None:
     print("This functionality is not available yet!")
@@ -153,6 +206,18 @@ def strip_accents(text: str) -> str:
             filtered_chars.append(c)
     
     return ''.join(filtered_chars)
+
+def compare_to_all():
+    return
+
+def compare_to_rarity():
+    return
+
+def compare_to_above_average():
+    return
+
+def rank_ship():
+    return
 
 if __name__ == "__main__":
     main()

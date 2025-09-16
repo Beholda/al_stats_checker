@@ -3,6 +3,8 @@ import pandas as pd
 import shutil
 import unicodedata
 
+# mapping users inputs of numerals to roman numerals
+# only ii is really used at time of writing (for sequel ships like houston ii)
 ROMAN_MAP = {
     "ii": "2",
     "iii": "3",
@@ -10,7 +12,7 @@ ROMAN_MAP = {
     "v": "5"
 }
 
-REPLACEMENTS = {
+SYMBOLS = {
     "µ": "muse"
 }
 
@@ -20,12 +22,7 @@ VALID_STATS = {
     "anti-submarine", "oxygen", "ammunition", "accuracy", "all"
 }
 
-AVERAGE_STATS_OPTIONS = {
-    "1": ("Compare to mean/median of all ships", compare_to_all),
-    "2": ("Compare to mean/median of same rarity", compare_to_rarity),
-    "3": ("Compare to ships above average", compare_to_above_average),
-    "4": ("Rank this ship among all ships", rank_ship),
-}
+
 
 """
 Functionality:
@@ -172,6 +169,15 @@ def show_average_stats(ship_data: dict) -> None:
                 func(selected_ship, selected_level, selected_stats, ship_data)
             else:
                 print("Invalid choice, please try again.")
+            
+            print("1. Make another comparison\n2. Exit to main menu")
+
+            choice = input("Enter choice: ").strip()
+
+            if choice == "1":
+                continue
+            else:
+                break
 
 def compare_ships(ship_data: dict) -> None:
     print("This functionality is not available yet!")
@@ -185,7 +191,7 @@ def normalise_name(name: str) -> str:
     name = name.lower()
     name = strip_accents(name)
 
-    for k, v in REPLACEMENTS.items():
+    for k, v in SYMBOLS.items():
         name = name.replace(v, k)
     for k, v in ROMAN_MAP.items():
         if name.endswith(" " + v):
@@ -218,6 +224,13 @@ def compare_to_above_average():
 
 def rank_ship():
     return
+
+AVERAGE_STATS_OPTIONS = {
+    "1": ("Compare to mean/median of all ships", compare_to_all),
+    "2": ("Compare to mean/median of same rarity", compare_to_rarity),
+    "3": ("Compare to ships above average", compare_to_above_average),
+    "4": ("Rank this ship among all ships", rank_ship),
+}
 
 if __name__ == "__main__":
     main()

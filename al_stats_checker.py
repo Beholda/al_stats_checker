@@ -122,12 +122,19 @@ def show_average_stats(ship_data: dict) -> None:
         print("-For any ship with special character in their names, e.g. Lützow, simply type the most intuitive equivalent, e.g. lutzow.")
         print("-For muse ships, type the word 'muse' in place of the muse special character, e.g. roon muse")
 
-        selected_ship = str(input("\nSelect ship: "))
+        selected_ship = str(input("\nSelect ship: ")).strip()
 
         print("Pick the level of the ship at which to show the stats.")
         print("Options: 1, 100, 120, 125")
 
         selected_level = str(input("\nSelect level: "))
+
+        ship_row, class_df = find_ship(selected_ship, selected_level, ship_data)
+
+        if ship_row is None:
+            print(f"Ship '{selected_ship}' not found at level {selected_level}. Please try again.")
+            continue
+
 
         print(f"Options: {", ".join(sorted(VALID_STATS))}")
         print("Separate each choice by commas e.g. speed,anti-air,firepower,oil consumption,reload")
@@ -166,7 +173,7 @@ def show_average_stats(ship_data: dict) -> None:
             choice = input("Enter choice: ").strip()
             if choice in AVERAGE_STATS_OPTIONS:
                 _, func = AVERAGE_STATS_OPTIONS[choice]
-                func(selected_ship, selected_level, selected_stats, ship_data)
+                func(ship_row, class_df, selected_stats)
             else:
                 print("Invalid choice, please try again.")
             
@@ -213,8 +220,34 @@ def strip_accents(text: str) -> str:
     
     return ''.join(filtered_chars)
 
-def compare_to_all():
-    return
+def compare_to_all(ship_row, class_df, stats: list[str]) -> None:
+    """
+    Compare this ship's stats to the mean/median of all ships in its class at this level.
+    """
+    for stat in stats:
+        if stat not in class_df.columns:
+            print(f"\nStat '{stat}' not found.")
+            continue
+
+        ship_value = ship_row[stat]
+        stat_series = class_df[stat].dropna()
+
+        mean_val = stat_series.mean()
+        median_val = stat_series.median()
+
+        above_mean = (stat_series > ship_value).sum()
+        below_mean = (stat_series < ship_value).sum()
+        rank = (stat_series > ship_value).sum() + 1
+
+        print(f"\nComparison for '{ship_row['Ship Name']}' ({stat}) at this level:")
+        print(f"Value: {ship_value}")
+        print(f"Mean of all ships: {mean_val:.1f}")
+        print(f"Median of all ships: {median_val:.1f}")
+        print(f"Ships above this value: {above_mean}")
+        print(f"Ships below this value: {below_mean}")
+        print(f"Rank: {rank} out of {len(stat_series)} ships")
+
+
 
 def compare_to_rarity():
     return
@@ -225,11 +258,28 @@ def compare_to_above_average():
 def rank_ship():
     return
 
+def find_ship(ship_name: str, ship_level: str, ship_data: dict):
+    """
+    Returns (row, dataframe) for the given ship name at the given level,
+    or (None, None) if not found.
+    """
+    normalized = normalise_name(ship_name)
+
+    for key, df in ship_data.items():
+        # key looks like "CV_Level_100"
+        if not key.endswith(f"Level_{ship_level}"):
+            continue
+
+        matches = df[df["Ship Name"].apply(lambda x: normalise_name(x) == normalized)]
+        if not matches.empty:
+            return matches.iloc[0], df  # Found the right ship in the right level
+
+    return None, None
+
 AVERAGE_STATS_OPTIONS = {
-    "1": ("Compare to mean/median of all ships", compare_to_all),
-    "2": ("Compare to mean/median of same rarity", compare_to_rarity),
-    "3": ("Compare to ships above average", compare_to_above_average),
-    "4": ("Rank this ship among all ships", rank_ship),
+    "1": ("Compare to mean/median of ships in the same class.", compare_to_all),
+    "2": ("Compare to mean/median of ships in the same class with the same rarity.", compare_to_rarity),
+    "3": ("Compare to mean/median of only ships in the same class above the median.", compare_to_above_average),
 }
 
 if __name__ == "__main__":

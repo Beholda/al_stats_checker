@@ -207,6 +207,7 @@ ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpe
 691,Gallant,Elite,Royal Navy,DD,30,Light,43,1666,87,167,372,264,0,9,209,215,0,0,213
 696,Z13,Elite,Iron Blood,DD,36,Light,43,2013,80,176,448,200,0,9,209,203,0,0,204
 701,Le Hardi,Super Rare,Iris Libre,DD,57,Light,42,1933,126,185,398,271,0,10,212,200,0,0,218
+704,Taekaze,Elite,Sakura Empire,DD,56,Light,42,2157,65,156,526,239,0,9,215,192,0,0,207
 10003,Blanc,Elite,Neptunia,DD,71,Light,45,1801,70,148,438,219,0,9,206,199,0,0,206
 10007,White Heart,Super Rare,Neptunia,DD,73,Light,45,1946,74,153,476,223,0,10,215,205,0,0,206
 10021,22,Elite,Bilibili,DD,22,Light,43,1426,54,149,204,205,0,9,179,189,0,0,200
@@ -249,6 +250,7 @@ ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpe
 3094,Glowworm (Retrofit),Super Rare,Royal Navy,DD,36,Light,43,1577,89,165,425,302,0,9,201,215,,,204
 3101,Javelin (Retrofit),Super Rare,Royal Navy,DD,65,Light,46,1746,90,160,429,302,0,9,207,215,,,213
 3155,Ayanami (Retrofit),Super Rare,Sakura Empire,DD,36,Light,48,1963,75,146,569,264,0,9,229,203,,,201
+3163,Shiratsuyu (Retrofit),Elite,Sakura Empire,DD,41,Light,40,1878,65,180,549,259,0,8,197,165,,,200
 3164,Yuudachi (Retrofit),Ultra Rare,Sakura Empire,DD,32,Light,40,1993,110,157,585,279,0,10,226,200,,,209
 3165,Shigure (Retrofit),Super Rare,Sakura Empire,DD,84,Light,40,1928,85,150,589,259,0,9,212,201,,,200
 3167,Kagerou (Retrofit),Elite,Sakura Empire,DD,25,Light,45,2050,75,150,552,241,0,8,221,209,,,201

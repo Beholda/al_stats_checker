@@ -84,6 +84,7 @@ ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpe
 669,Fritz Rumey,Ultra Rare,Iron Blood,CV,50,Medium,34,8480,221,323,0,50,448,15,143,0,0,0,107
 682,Franklin,Super Rare,Eagle Union,CV,80,Medium,33,6634,0,332,0,55,433,13,131,0,0,0,90
 699,Bois Belleau,Super Rare,Iris Libre,CVL,60,Medium,31,5374,0,291,0,85,372,12,200,74,0,0,90
+703,Hakuhou,Ultra Rare,Sakura Empire,CV,36,Heavy,32,8008,0,331,0,54,472,15,126,0,0,0,82
 10004,Vert,Elite,Neptunia,CV,93,Medium,28,5522,0,288,0,47,377,12,111,0,0,0,89
 10008,Green Heart,Super Rare,Neptunia,CV,95,Medium,28,5781,0,298,0,55,395,13,114,0,0,0,89
 10034,Uruuru,Elite,Utawarerumono,CVL,69,Light,26,4472,0,255,0,55,237,11,155,72,0,0,80

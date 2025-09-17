@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import shutil
 import unicodedata
+from typing import Optional, Tuple
 
 # mapping users inputs of numerals to roman numerals
 # only ii is really used at time of writing (for sequel ships like houston ii)
@@ -17,9 +18,21 @@ SYMBOLS = {
 }
 
 VALID_STATS = {
-    "luck", "speed", "health", "firepower", "anti-air", "torpedo",
-    "evasion", "aviation", "oil consumption", "reload",
-    "anti-submarine", "oxygen", "ammunition", "accuracy", "all"
+    "luck": "Luck",
+    "speed": "Speed",
+    "health": "Health",
+    "firepower": "Firepower",
+    "anti-air": "Anti-Air",
+    "torpedo": "Torpedo",
+    "evasion": "Evasion",
+    "aviation": "Aviation",
+    "oil consumption": "Oil Consumption",
+    "reload": "Reload",
+    "anti-submarine": "Anti-Submarine",
+    "oxygen": "Oxygen",
+    "ammunition": "Ammunition",
+    "accuracy": "Accuracy",
+    "all": "all"  # special keyword
 }
 
 
@@ -45,7 +58,7 @@ def main() -> None:
         choice = str(input("Choose an option by typing the corresponding number: "))  
 
         if choice == "1":
-            show_average_stats()
+            show_average_stats(ship_data)
         elif choice == "2":
             compare_ships()
         elif choice == "3":
@@ -139,20 +152,26 @@ def show_average_stats(ship_data: dict) -> None:
         print(f"Options: {", ".join(sorted(VALID_STATS))}")
         print("Separate each choice by commas e.g. speed,anti-air,firepower,oil consumption,reload")
 
-        while True: 
-            stats_input = str(input("\nSelect stats: "))
-            for stat in stats_input.split(","):
-                cleaned = stat.strip() # remove whitespace
-                lowered = cleaned.lower() # make inputs lower case
-                selected_stats.append(lowered)
+        while True:
+            stats_input = input("\nSelect stats: ")
+            invalid = []
 
-            for stat_validity in selected_stats:
-                if stat_validity not in VALID_STATS:
-                    invalid.append(stat_validity)
-            
+            for stat in stats_input.split(","):
+                cleaned = stat.strip().lower()
+                if cleaned in VALID_STATS:
+                    selected_stats.append(VALID_STATS[cleaned])  # store real DF column name
+                else:
+                    invalid.append(cleaned)
+
+            if "all" in selected_stats:
+                for col in class_df.columns:
+                    if col in VALID_STATS:
+                        selected_stats.append(col)
+
             if invalid:
                 print(f"INVALID INPUT(S): {', '.join(invalid)}")
                 print("Please choose from:", ", ".join(sorted(VALID_STATS)))
+                selected_stats.clear()  # reset so bad inputs don't slip through
             else:
                 break
         
@@ -163,7 +182,7 @@ def show_average_stats(ship_data: dict) -> None:
         # (the idea of the above is to compare it to the ships that are "good")
         # show where this ship is ranked in that stat among all ships
         while True:
-            print("Select which metric by which you wish to compare this ship's stats.")
+            print("\nSelect which metric by which you wish to compare this ship's stats.")
             print("Note that metrics are drawn only from the ships of the same class as this ship.")
             print("Subsets of a class are simply considered to be within that class. For example, battlecruisers are considered battleships for simplicity")
             
@@ -177,14 +196,14 @@ def show_average_stats(ship_data: dict) -> None:
             else:
                 print("Invalid choice, please try again.")
             
-            print("1. Make another comparison\n2. Exit to main menu")
+            print("\n1. Make another comparison\n2. Exit to main menu")
 
             choice = input("Enter choice: ").strip()
 
             if choice == "1":
                 continue
             else:
-                break
+                return
 
 def compare_ships(ship_data: dict) -> None:
     print("This functionality is not available yet!")
@@ -220,45 +239,75 @@ def strip_accents(text: str) -> str:
     
     return ''.join(filtered_chars)
 
-def compare_to_all(ship_row, class_df, stats: list[str]) -> None:
+def compare_to_all(ship_row: pd.Series, class_df: pd.DataFrame, stats: list[str]) -> None:
     """
     Compare this ship's stats to the mean/median of all ships in its class at this level.
     """
     for stat in stats:
-        if stat not in class_df.columns:
-            print(f"\nStat '{stat}' not found.")
-            continue
-
         ship_value = ship_row[stat]
         stat_series = class_df[stat].dropna()
 
         mean_val = stat_series.mean()
         median_val = stat_series.median()
 
-        above_mean = (stat_series > ship_value).sum()
-        below_mean = (stat_series < ship_value).sum()
         rank = (stat_series > ship_value).sum() + 1
 
         print(f"\nComparison for '{ship_row['Ship Name']}' ({stat}) at this level:")
         print(f"Value: {ship_value}")
         print(f"Mean of all ships: {mean_val:.1f}")
         print(f"Median of all ships: {median_val:.1f}")
-        print(f"Ships above this value: {above_mean}")
-        print(f"Ships below this value: {below_mean}")
         print(f"Rank: {rank} out of {len(stat_series)} ships")
 
+def compare_to_rarity(ship_row: pd.Series, class_df: pd.DataFrame, stats: list[str]) -> None:
+    """
+    Compare this ship's stats to the mean/median of all ships in its class
+    with the same rarity at this level.
+    """
+    rarity = ship_row["Rarity"]
+
+    # Filter class_df down to only ships of the same rarity
+    rarity_df = class_df[class_df["Rarity"] == rarity]
+
+    for stat in stats:
+        ship_value = ship_row[stat]
+        stat_series = rarity_df[stat].dropna()
+
+        mean_val = stat_series.mean()
+        median_val = stat_series.median()
+        rank = (stat_series > ship_value).sum() + 1
+
+        print(f"\nComparison for '{ship_row['Ship Name']}' ({stat}) among {rarity} ships at this level:")
+        print(f"Value: {ship_value}")
+        print(f"Mean of {rarity} ships: {mean_val:.1f}")
+        print(f"Median of {rarity} ships: {median_val:.1f}")
+        print(f"Rank: {rank} out of {len(stat_series)} {rarity} ships")
 
 
-def compare_to_rarity():
-    return
+def compare_to_above_median(ship_row: pd.Series, class_df: pd.DataFrame, stats: list[str]) -> None:
+    """
+    Compare this ship's stats to the mean/median of all ships in its class
+    above the median (i.e. the mean/median of only the upper half of ships within the stat base).
+    This is for purposes of seeing how it compares to the "better" ships.
+    """
+    for stat in stats:
+        ship_value = ship_row[stat]
+        stat_series = class_df[stat].dropna()
 
-def compare_to_above_average():
-    return
+        median_val = stat_series.median()
+        ships_above_median = stat_series[stat_series >= median_val]
+        mean_val_of_ships_above_med = ships_above_median.mean()
+        median_val_of_ships_above_med = ships_above_median.median()
+        rank = (ships_above_median > ship_value).sum() + 1
 
-def rank_ship():
-    return
+        rank = (ships_above_median > ship_value).sum() + 1
 
-def find_ship(ship_name: str, ship_level: str, ship_data: dict):
+        print(f"\nComparison for '{ship_row['Ship Name']}' ({stat}) at this level:")
+        print(f"Value: {ship_value}")
+        print(f"Mean of all ships above the median: {mean_val_of_ships_above_med:.1f}")
+        print(f"Median of all ships above the median: {median_val_of_ships_above_med:.1f}")
+        print(f"Rank: {rank} out of {len(ships_above_median)} ships")
+
+def find_ship(ship_name: str, ship_level: str, ship_data: dict[str, pd.DataFrame]) -> Tuple[Optional[pd.Series], Optional[pd.DataFrame]]:
     """
     Returns (row, dataframe) for the given ship name at the given level,
     or (None, None) if not found.
@@ -279,7 +328,7 @@ def find_ship(ship_name: str, ship_level: str, ship_data: dict):
 AVERAGE_STATS_OPTIONS = {
     "1": ("Compare to mean/median of ships in the same class.", compare_to_all),
     "2": ("Compare to mean/median of ships in the same class with the same rarity.", compare_to_rarity),
-    "3": ("Compare to mean/median of only ships in the same class above the median.", compare_to_above_average),
+    "3": ("Compare to mean/median of only ships in the same class above the median.", compare_to_above_median),
 }
 
 if __name__ == "__main__":

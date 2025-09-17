@@ -33,6 +33,7 @@ ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpe
 658,Herring,Elite,Eagle Union,SS,54,Light,20,1733,72,0,511,41,0,6,93,0,243,2,201
 679,Maggiore Baracca,Super Rare,Sardegna Empire,SS,19,Light,18,1748,44,0,537,38,0,7,101,0,232,2,185
 695,U-552,Super Rare,Iron Blood,SS,52,Light,14,1338,61,0,567,38,0,7,112,0,188,2,206
+705,I-404,Ultra Rare,Sakura Empire,SSV,66,Light,15,3838,58,0,543,40,454,9,115,0,268,2,206
 10053,Minato Aqua,Super Rare,Hololive,SS,64,Light,18,1722,66,0,545,45,0,8,109,0,268,2,182
 10076,Ami Futami,Elite,The Idolmaster,SS,74,Light,23,1542,49,0,518,43,0,6,118,0,248,2,207
 10077,Mami Futami,Elite,The Idolmaster,SS,74,Light,23,1542,49,0,518,43,0,6,118,0,248,2,207

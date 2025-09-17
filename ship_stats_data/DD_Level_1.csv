@@ -207,6 +207,7 @@ ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpe
 691,Gallant,Elite,Royal Navy,DD,30,Light,43,269,16,31,70,78,0,2,77,53,0,0,71
 696,Z13,Elite,Iron Blood,DD,36,Light,43,327,15,33,86,59,0,2,77,50,0,0,68
 701,Le Hardi,Super Rare,Iris Libre,DD,57,Light,42,312,23,34,76,78,0,3,78,49,0,0,73
+704,Taekaze,Elite,Sakura Empire,DD,56,Light,42,348,12,29,101,71,0,2,79,47,0,0,69
 10003,Blanc,Elite,Neptunia,DD,71,Light,45,293,13,28,84,65,0,2,76,49,0,0,69
 10007,White Heart,Super Rare,Neptunia,DD,73,Light,45,314,14,29,92,66,0,3,79,51,0,0,69
 10021,22,Elite,Bilibili,DD,22,Light,43,230,10,28,38,60,0,2,66,47,0,0,67
@@ -231,6 +232,7 @@ ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpe
 30047,Grenville META,Elite,META,DD,32,Light,43,264,22,31,72,68,0,6,77,51,0,0,53
 30049,Kawakaze META,Super Rare,META,DD,38,Light,41,309,19,31,114,69,0,6,80,49,0,0,57
 30051,Yuudachi META,Super Rare,META,DD,32,Light,41,295,28,33,100,72,0,6,83,49,0,0,57
+,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,

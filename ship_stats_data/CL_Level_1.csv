@@ -119,6 +119,7 @@ ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpe
 690,Cleopatra,Super Rare,Royal Navy,CL,68,Light,32,647,29,84,34,32,0,3,71,46,0,0,61
 692,Trinidad,Elite,Royal Navy,CL,10,Light,32,648,31,52,53,30,0,3,70,30,0,0,55
 702,Duguay-Trouin,Elite,Iris Libre,CL,80,Light,33,523,33,56,62,28,0,3,70,34,0,0,55
+708,Minase,Elite,Sakura Empire,CL,39,Light,35,467,29,55,68,29,0,3,70,26,0,0,52
 10001,Neptune (Neptunia),Elite,Neptunia,CL,73,Light,31,588,28,57,54,28,0,3,63,29,0,0,54
 10005,Purple Heart,Super Rare,Neptunia,CL,87,Light,31,637,31,59,58,29,0,3,66,31,0,0,54
 10033,Rurutie,Super Rare,Utawarerumono,CL,66,Light,32,700,28,51,46,31,0,3,62,25,0,0,56

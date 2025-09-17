@@ -79,6 +79,7 @@ ID,Ship Name,Rarity,Nation,Type,Luck,Armor,Speed,Health,Firepower,Anti-Air,Torpe
 693,Little Anchorage,Elite,Eagle Union,CA,0,Medium,26,6029,245,219,207,64,0,11,156,0,0,0,128
 697,Little Ägir,Elite,Iron Blood,CB,0,Heavy,26,6524,233,209,167,44,0,11,139,0,0,0,108
 700,Duquesne,Elite,Iris Libre,CA,77,Light,27,3493,258,238,179,79,0,11,190,0,0,0,137
+707,Asama,Super Rare,Sakura Empire,CA,50,Medium,28,4905,294,200,310,70,0,12,187,0,0,0,142
 10002,Noire,Elite,Neptunia,CA,83,Medium,27,3827,237,178,199,65,0,11,165,0,0,0,128
 10006,Black Heart,Super Rare,Neptunia,CA,83,Medium,27,4061,250,192,218,67,0,12,169,0,0,0,128
 10031,Kuon,Super Rare,Utawarerumono,CA,90,Medium,28,4138,237,174,198,54,0,12,160,0,0,0,134

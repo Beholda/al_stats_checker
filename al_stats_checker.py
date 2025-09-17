@@ -152,28 +152,30 @@ def show_average_stats(ship_data: dict) -> None:
         print(f"Options: {", ".join(sorted(VALID_STATS))}")
         print("Separate each choice by commas e.g. speed,anti-air,firepower,oil consumption,reload")
 
+
         while True:
             stats_input = input("\nSelect stats: ")
             invalid = []
+            selected_stats.clear()  # reset for each input attempt
 
             for stat in stats_input.split(","):
                 cleaned = stat.strip().lower()
                 if cleaned in VALID_STATS:
-                    selected_stats.append(VALID_STATS[cleaned])  # store real DF column name
+                    selected_stats.append(VALID_STATS[cleaned])  # store proper DF column name
                 else:
                     invalid.append(cleaned)
-
-            if "all" in selected_stats:
-                for col in class_df.columns:
-                    if col in VALID_STATS:
-                        selected_stats.append(col)
 
             if invalid:
                 print(f"INVALID INPUT(S): {', '.join(invalid)}")
                 print("Please choose from:", ", ".join(sorted(VALID_STATS)))
-                selected_stats.clear()  # reset so bad inputs don't slip through
-            else:
-                break
+                continue  # re-prompt the user
+
+            # Handle 'all' AFTER input validation
+            if "all" in stats_input.lower():  # check if user typed 'all'
+                selected_stats = [col for col in VALID_STATS.values() if col != "all"]
+
+            break  # input is valid, exit loop
+
         
         # comparisons are always only done with ships within the same class as that's what's relevant
         # compare this ship's stats to means and medians of all ships

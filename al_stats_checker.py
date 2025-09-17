@@ -60,7 +60,7 @@ def main() -> None:
         if choice == "1":
             show_average_stats(ship_data)
         elif choice == "2":
-            compare_ships()
+            compare_ships(ship_data)
         elif choice == "3":
             "Exited successfully"
             break
@@ -208,7 +208,10 @@ def show_average_stats(ship_data: dict) -> None:
                 return
 
 def compare_ships(ship_data: dict) -> None:
-    print("This functionality is not available yet!")
+
+    
+
+    return
 
 def normalise_name(name: str) -> str:
     """

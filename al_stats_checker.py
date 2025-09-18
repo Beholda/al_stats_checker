@@ -209,9 +209,73 @@ def show_average_stats(ship_data: dict) -> None:
 
 def compare_ships(ship_data: dict) -> None:
 
-    
+    first_ship = ""
+    second_ship = ""
+    selected_level = 1
+    stats_input = ""
+    selected_stats = []
+    invalid = []
 
-    return
+    while True:
+        print("\nCompare the stats of two ships.")
+        print("Lookup rules:")
+        print("-For any ship with special character in their names, e.g. Lützow, simply type the most intuitive equivalent, e.g. lutzow.")
+        print("-For muse ships, type the word 'muse' in place of the muse special character, e.g. roon muse")
+
+        first_ship = str(input("\nSelect first ship for comparison: ")).strip()
+
+        print("Pick the level of the ships at which to show the stats.")
+        print("Options: 1, 100, 120, 125")
+
+        selected_level = str(input("\nSelect level: "))
+
+        first_ship_row, first_class_df = find_ship(first_ship, selected_level, ship_data)
+
+        if first_ship_row is None:
+            print(f"Ship '{first_ship}' not found at level {selected_level}. Please try again.")
+            continue
+
+        second_ship = str(input("\nSelect second ship for comparison: ")).strip()
+
+        second_ship_row, second_class_df = find_ship(second_ship, selected_level, ship_data)
+
+        if second_ship_row is None:
+            print(f"Ship '{second_ship}' not found at level {selected_level}. Please try again.")
+            continue
+
+        # Ensure both ships are from the same dataframe
+        if first_class_df is not second_class_df:
+            print(f"'{first_ship}' and '{second_ship}' are not considered the same class for comparison.")
+            continue
+
+            # TODO
+
+        print(f"Options: {", ".join(sorted(VALID_STATS))}")
+        print("Separate each choice by commas e.g. speed,anti-air,firepower,oil consumption,reload")
+
+
+        while True:
+            stats_input = input("\nSelect stats: ")
+            invalid = []
+            selected_stats.clear()  # reset for each input attempt
+
+            for stat in stats_input.split(","):
+                cleaned = stat.strip().lower()
+                if cleaned in VALID_STATS:
+                    selected_stats.append(VALID_STATS[cleaned])  # store proper DF column name
+                else:
+                    invalid.append(cleaned)
+
+            if invalid:
+                print(f"INVALID INPUT(S): {', '.join(invalid)}")
+                print("Please choose from:", ", ".join(sorted(VALID_STATS)))
+                continue  # re-prompt the user
+
+            # Handle 'all' AFTER input validation
+            if "all" in stats_input.lower():  # check if user typed 'all'
+                selected_stats = [col for col in VALID_STATS.values() if col != "all"]
+
+            break  # input is valid, exit loop
 
 def normalise_name(name: str) -> str:
     """

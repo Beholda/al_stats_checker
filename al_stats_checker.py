@@ -35,7 +35,7 @@ VALID_STATS = {
     "all": "all"  # special keyword
 }
 
-
+VALID_LEVELS = ["1", "100", "120", "125"]
 
 """
 Functionality:
@@ -142,12 +142,15 @@ def show_average_stats(ship_data: dict) -> None:
 
         selected_level = str(input("\nSelect level: "))
 
+        if selected_level not in VALID_LEVELS:
+            print("Please choose from the options.")
+            continue
+
         ship_row, class_df = find_ship(selected_ship, selected_level, ship_data)
 
         if ship_row is None:
             print(f"Ship '{selected_ship}' not found at level {selected_level}. Please try again.")
             continue
-
 
         print(f"Options: {", ".join(sorted(VALID_STATS))}")
         print("Separate each choice by commas e.g. speed,anti-air,firepower,oil consumption,reload")
@@ -172,7 +175,10 @@ def show_average_stats(ship_data: dict) -> None:
 
             # Handle 'all' AFTER input validation
             if "all" in stats_input.lower():  # check if user typed 'all'
-                selected_stats = [col for col in VALID_STATS.values() if col != "all"]
+                selected_stats = []
+                for col in VALID_STATS.values():
+                    if col != "all":
+                        selected_stats.append(col)
 
             break  # input is valid, exit loop
 
@@ -203,7 +209,7 @@ def show_average_stats(ship_data: dict) -> None:
             choice = input("Enter choice: ").strip()
 
             if choice == "1":
-                continue
+                break
             else:
                 return
 
@@ -223,19 +229,22 @@ def compare_ships(ship_data: dict) -> None:
         print("-For muse ships, type the word 'muse' in place of the muse special character, e.g. roon muse")
 
         first_ship = str(input("\nSelect first ship for comparison: ")).strip()
+        second_ship = str(input("Select second ship for comparison: ")).strip()
 
         print("Pick the level of the ships at which to show the stats.")
         print("Options: 1, 100, 120, 125")
 
         selected_level = str(input("\nSelect level: "))
 
+        if selected_level not in VALID_LEVELS:
+            print("Please choose from the options.")
+            continue
+
         first_ship_row, first_class_df = find_ship(first_ship, selected_level, ship_data)
 
         if first_ship_row is None:
             print(f"Ship '{first_ship}' not found at level {selected_level}. Please try again.")
             continue
-
-        second_ship = str(input("\nSelect second ship for comparison: ")).strip()
 
         second_ship_row, second_class_df = find_ship(second_ship, selected_level, ship_data)
 
@@ -247,8 +256,6 @@ def compare_ships(ship_data: dict) -> None:
         if first_class_df is not second_class_df:
             print(f"'{first_ship}' and '{second_ship}' are not considered the same class for comparison.")
             continue
-
-            # TODO
 
         print(f"Options: {", ".join(sorted(VALID_STATS))}")
         print("Separate each choice by commas e.g. speed,anti-air,firepower,oil consumption,reload")
@@ -270,12 +277,32 @@ def compare_ships(ship_data: dict) -> None:
                 print(f"INVALID INPUT(S): {', '.join(invalid)}")
                 print("Please choose from:", ", ".join(sorted(VALID_STATS)))
                 continue  # re-prompt the user
-
+   
             # Handle 'all' AFTER input validation
             if "all" in stats_input.lower():  # check if user typed 'all'
-                selected_stats = [col for col in VALID_STATS.values() if col != "all"]
-
+                selected_stats = []
+                for col in VALID_STATS.values():
+                    if col != "all":
+                        selected_stats.append(col)
             break  # input is valid, exit loop
+
+        while True:
+            # call the function to actually compare the two ships
+            compare_two_ships(first_ship_row, second_ship_row, selected_stats)
+
+            # Ask the user what to do next
+            print("\n1. Compare another pair of ships")
+            print("2. Exit to main menu")
+
+            next_choice = input("Enter choice: ").strip()
+            if next_choice == "1":
+                break  # break this inner loop to re-prompt for new ships
+            elif next_choice == "2":
+                return  # exit the compare_ships function to go back to main menu
+            else:
+                print("Invalid choice, returning to main menu.")
+                return
+
 
 def normalise_name(name: str) -> str:
     """
@@ -283,9 +310,12 @@ def normalise_name(name: str) -> str:
     numeric characters at the end of a ship name e.g. laffey 2 with the "ii" roman numeral which is how
     it's represented in the data.
     """
+    if not isinstance(name, str):
+        return ""  # Treat NaNs or non-strings as empty
     name = name.lower()
     name = strip_accents(name)
-
+    name = name.replace("ß", "ss")
+    
     for k, v in SYMBOLS.items():
         name = name.replace(v, k)
     for k, v in ROMAN_MAP.items():
@@ -399,6 +429,27 @@ AVERAGE_STATS_OPTIONS = {
     "2": ("Compare to mean/median of ships in the same class with the same rarity.", compare_to_rarity),
     "3": ("Compare to mean/median of only ships in the same class above the median.", compare_to_above_median),
 }
+
+def compare_two_ships(first_ship: pd.Series, second_ship: pd.Series, selected_stats: list[str]) -> None:
+    for stat in selected_stats:
+        first_value = first_ship.get(stat)
+        second_value = second_ship.get(stat)
+
+        # Handle missing values
+        if pd.isna(first_value) or pd.isna(second_value):
+            print(f"\nStat '{stat}' is missing for one or both ships. Skipping comparison.")
+            continue
+
+        print(f"\nThe {stat} stat of {first_ship['Ship Name']} is {first_value}.")
+        print(f"The {stat} stat of {second_ship['Ship Name']} is {second_value}.")
+
+        if first_value == second_value:
+            print(f"{first_ship['Ship Name']} and {second_ship['Ship Name']} have the same {stat} at this level.")
+        elif first_value > second_value:
+            print(f"{first_ship['Ship Name']} has a higher {stat} than {second_ship['Ship Name']} by {first_value - second_value} at this level.")
+        else:
+            print(f"{second_ship['Ship Name']} has a higher {stat} than {first_ship['Ship Name']} by {second_value - first_value} at this level.")
+
 
 if __name__ == "__main__":
     main()

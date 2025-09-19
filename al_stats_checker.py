@@ -303,27 +303,32 @@ def compare_ships(ship_data: dict) -> None:
                 print("Invalid choice, returning to main menu.")
                 return
 
-
 def normalise_name(name: str) -> str:
     """
-    Sets input name to lower case, strips accented letters, replaces word "muse" with muse symbol, replaces 
-    numeric characters at the end of a ship name e.g. laffey 2 with the "ii" roman numeral which is how
-    it's represented in the data.
+    Normalises ship names:
+    - lowercase
+    - strip accents
+    - convert 'muse' keyword
+    - replace 'ß' with 'ss'
+    - handle roman numerals
+    - handle 'retrofit' keyword
     """
-    if not isinstance(name, str):
-        return ""  # Treat NaNs or non-strings as empty
-    name = name.lower()
+    name = name.lower().strip()
     name = strip_accents(name)
     name = name.replace("ß", "ss")
-    
+
+    # replace "retrofit" with " (retrofit)" so it matches data
+    if "retrofit" in name and "(retrofit)" not in name:
+        name = name.replace("retrofit", "").strip() + " (retrofit)"
+
     for k, v in SYMBOLS.items():
         name = name.replace(v, k)
+
     for k, v in ROMAN_MAP.items():
         if name.endswith(" " + v):
             name = name.replace(" " + v, " " + k)
-    
-    return name
 
+    return name
 
 def strip_accents(text: str) -> str:
     """

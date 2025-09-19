@@ -53,7 +53,7 @@ def main() -> None:
 
     while True:
         print("\n1. Explore average stats of a ship.")
-        print("2. Compare a ship")
+        print("2. Compare two ships")
         print("3. Exit")
         choice = str(input("Choose an option by typing the corresponding number: "))  
 

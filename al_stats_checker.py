@@ -67,10 +67,6 @@ def main() -> None:
         else:
             print("Please enter a valid input.")
 
-    
-
-    
-
 def load_ship_data() -> dict:
     """
     load all ship data, a dictionary with 32 items: 4 levels for each of the 8 ship hull types
@@ -254,12 +250,11 @@ def compare_ships(ship_data: dict) -> None:
 
         # Ensure both ships are from the same dataframe
         if first_class_df is not second_class_df:
-            print(f"'{first_ship}' and '{second_ship}' are not considered the same class for comparison.")
-            continue
+            print(f"\nNote that {first_ship_row["Ship Name"]} and {second_ship_row["Ship Name"]} are not the same class!.")
+            print(f"{first_ship_row["Ship Name"]} is a {first_ship_row["Type"]} while {second_ship_row['Ship Name']} is a {second_ship_row["Type"]}.")
 
-        print(f"Options: {", ".join(sorted(VALID_STATS))}")
+        print(f"\nOptions: {", ".join(sorted(VALID_STATS))}")
         print("Separate each choice by commas e.g. speed,anti-air,firepower,oil consumption,reload")
-
 
         while True:
             stats_input = input("\nSelect stats: ")

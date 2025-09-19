@@ -128,7 +128,7 @@ def show_average_stats(ship_data: dict) -> None:
     while True:
         print("\nExplore the average stats of a ship.")
         print("Lookup rules:")
-        print("-For any ship with special character in their names, e.g. Lützow, simply type the most intuitive equivalent, e.g. lutzow.")
+        print("-For any ship with special characters in their names, e.g. Lützow, simply type the most intuitive equivalent, e.g. lutzow.")
         print("-For muse ships, type the word 'muse' in place of the muse special character, e.g. roon muse")
 
         selected_ship = str(input("\nSelect ship: ")).strip()
@@ -188,7 +188,7 @@ def show_average_stats(ship_data: dict) -> None:
         while True:
             print("\nSelect which metric by which you wish to compare this ship's stats.")
             print("Note that metrics are drawn only from the ships of the same class as this ship.")
-            print("Subsets of a class are simply considered to be within that class. For example, battlecruisers are considered battleships for simplicity")
+            print("Subsets of a class are considered to be within that class. For example, battlecruisers are considered battleships for simplicity")
             
             for key, (desc, _) in AVERAGE_STATS_OPTIONS.items():
                 print(f"{key}. {desc}")

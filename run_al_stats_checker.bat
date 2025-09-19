@@ -1,3 +1,3 @@
 @echo off
-python "C:\path\to\al_stats_checker.py"
+python "C:\Users\simad\OneDrive\Desktop\scraper\al_stats_checker.py"
 pause

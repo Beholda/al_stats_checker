@@ -1,8 +1,12 @@
-import os
+import os, sys
 import pandas as pd
 import shutil
 import unicodedata
 from typing import Optional, Tuple
+import pyfiglet
+
+# .exe creation command: 
+# pyinstaller --onefile --add-data "C:\Users\USER\OneDrive\Desktop\scraper\ship_stats_data;ship_stats_data" --add-data "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\pyfiglet;pyfiglet" al_stats_checker.py
 
 # mapping users inputs of numerals to roman numerals
 # only ii is really used at time of writing (for sequel ships like houston ii)
@@ -37,17 +41,8 @@ VALID_STATS = {
 
 VALID_LEVELS = ["1", "100", "120", "125"]
 
-"""
-Functionality:
-Search ship, compare stats to averages
-    -list all stats and compare stats to averages OR just search one particular stat and compare averages
-    -opt to compare stats to avg of all ships of the same class, avg of all ships of the same class and rarity,
-    or avg all ships of the same class and rarity whose stats are above the median
-"""
-
 def main() -> None:
     
-   
     ship_data = load_ship_data()
     print_intro()
 
@@ -73,12 +68,10 @@ def load_ship_data() -> dict:
     each key is the name of the ship class and level, e.g. DD_Level_100
     each value is a pandas dataframe of the information
     """
-    # data is kept in a folder called ship_stats_data in the same folder as this program
-    data_folder = os.path.join(os.path.dirname(__file__), "ship_stats_data")
+    # Use resource_path so it works both in dev and bundled exe
+    data_folder = resource_path("ship_stats_data")
     ship_data = {}
 
-    # go through every file in the data folder, extract the key for the dict element, 
-    # construct a pandas dataframe from the csv data as the value and append the key-value pair
     for filename in os.listdir(data_folder):
         if filename.endswith(".csv"):
             key = filename.replace(".csv", "")
@@ -88,27 +81,18 @@ def load_ship_data() -> dict:
     
     return ship_data
 
+def resource_path(relative_path):
+    """Get absolute path to resource (works for .exe and dev)"""
+    if hasattr(sys, "_MEIPASS"):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.dirname(__file__), relative_path)
+
 def print_intro() -> None:
     """
     Called at program start to print the intro
     """
-    ascii_art = r"""
-                             _                            _        _                                                       
-     /\                     | |                          | |      | |                                                      
-    /  \    _____   _ _ __  | |     __ _ _ __   ___   ___| |_ __ _| |_ ___    ___ ___  _ __ ___  _ __   __ _ _ __ ___ _ __ 
-   / /\ \  |_  / | | | '__| | |    / _` | '_ \ / _ \ / __| __/ _` | __/ __|  / __/ _ \| '_ ` _ \| '_ \ / _` | '__/ _ \ '__|
-  / ____ \  / /| |_| | |    | |___| (_| | | | |  __/ \__ \ || (_| | |_\__ \ | (_| (_) | | | | | | |_) | (_| | | |  __/ |   
- /_/    \_\/___|\__,_|_|    |______\__,_|_| |_|\___| |___/\__\__,_|\__|___/  \___\___/|_| |_| |_| .__/ \__,_|_|  \___|_|   
-                                                                                                | |                        
-                                                                                                |_|                        
-    """
-    # Get terminal width (default to 80 if unavailable)
-    term_width = shutil.get_terminal_size((80, 20)).columns  
-
-    # Center each line
-    for line in ascii_art.splitlines():
-        print(line.center(term_width))
-
+    banner = pyfiglet.figlet_format("Azur Lane stats comparer")
+    print(banner)
     print("All stats assume 100 affinity. Data is gathered from the Azur Lane Wiki https://azurlane.koumakan.jp/wiki/List_of_Ships_by_Stats")
     print("\nNote that the information from here does not tell the full story on how powerful a ship is. It considers only raw stats and does not take into account other important factors of ship power such as equipment efficiencies and skills.")
     print("It is intended as a general indicator of strength out of interest, not a determinent of tier.")

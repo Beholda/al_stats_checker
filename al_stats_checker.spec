@@ -5,7 +5,7 @@ a = Analysis(
     ['al_stats_checker.py'],
     pathex=[],
     binaries=[],
-    datas=[('ship_stats_data', 'ship_stats_data')],
+    datas=[('C:\\Users\\simad\\OneDrive\\Desktop\\scraper\\ship_stats_data', 'ship_stats_data'), ('C:\\Users\\simad\\AppData\\Roaming\\Python\\Python313\\site-packages\\pyfiglet', 'pyfiglet')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
